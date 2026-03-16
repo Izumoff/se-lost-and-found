@@ -1,0 +1,39 @@
+Table auth_user {
+ id int [pk]
+ username varchar
+ password varchar
+ email varchar
+ first_name varchar
+ last_name varchar
+}
+
+Table lost_report {
+ id int [pk]
+ user_id int
+ reviewed_by_user_id int
+ item_name varchar
+ category varchar
+ date_lost date
+ location_lost varchar
+ description text
+ contact_phone varchar
+ contact_email varchar
+ attachment_path varchar
+ current_status varchar
+ created_at datetime
+ updated_at datetime
+}
+
+Table report_status_history {
+ id int [pk]
+ report_id int
+ changed_by_user_id int
+ status varchar
+ note text
+ changed_at datetime
+}
+
+Ref: lost_report.user_id > auth_user.id
+Ref: lost_report.reviewed_by_user_id > auth_user.id
+Ref: report_status_history.report_id > lost_report.id
+Ref: report_status_history.changed_by_user_id > auth_user.id

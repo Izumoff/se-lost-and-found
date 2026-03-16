@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Lost and Found</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">Campus Lost &amp; Found</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="#report-form">Report Item</a></li>
+          <li class="nav-item"><a class="nav-link" href="#my-reports">My Reports</a></li>
+          <li class="nav-item"><a class="nav-link" href="#staff-review">Staff Review</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="#login" class="btn btn-outline-light btn-sm">Log In</a>
+          <a href="#report-form" class="btn btn-light btn-sm">Create Report</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="py-5 bg-white border-bottom">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-6 fw-bold mb-3">Campus Lost and Found</h1>
+          <p class="lead text-secondary mb-4">
+            Submit a lost item report, track your report status, and let security office staff review and manage item reports.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#report-form" class="btn btn-primary">I Lost Something</a>
+            <a href="#my-reports" class="btn btn-outline-primary">View My Reports</a>
+            <a href="#staff-review" class="btn btn-outline-secondary">Staff Review Demo</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title mb-3">System Summary</h5>
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="border rounded p-3 text-center bg-light">
+                    <div class="fs-4 fw-bold">12</div>
+                    <div class="small text-secondary">Open Reports</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="border rounded p-3 text-center bg-light">
+                    <div class="fs-4 fw-bold">5</div>
+                    <div class="small text-secondary">Under Review</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="border rounded p-3 text-center bg-light">
+                    <div class="fs-4 fw-bold">8</div>
+                    <div class="small text-secondary">Resolved</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="border rounded p-3 text-center bg-light">
+                    <div class="fs-4 fw-bold">2</div>
+                    <div class="small text-secondary">Rejected</div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <p class="mb-0 small text-secondary">
+                Campus community users can view only their own reports and statuses. Security office staff can review and approve or reject reports.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+
+      <section id="login" class="mb-5">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="card shadow-sm h-100">
+              <div class="card-header bg-white">
+                <h2 class="h5 mb-0">Login</h2>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Username or Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter username or email" />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="role" class="form-label">Role</label>
+                    <select class="form-select" id="role">
+                      <option selected>Campus Community User</option>
+                      <option>Security Office Staff</option>
+                    </select>
+                  </div>
+
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary">Log In</button>
+                    <button type="button" class="btn btn-outline-secondary">Log Out</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="card shadow-sm h-100">
+              <div class="card-header bg-white">
+                <h2 class="h5 mb-0">Important Rules</h2>
+              </div>
+              <div class="card-body">
+                <ul class="mb-0">
+                  <li>Only registered users can access the system.</li>
+                  <li>Campus community users can create lost item reports.</li>
+                  <li>Campus community users can view only their own reports.</li>
+                  <li>Security office staff review reports and decide whether to approve or reject them.</li>
+                  <li>Status values can include Open, Under Review, Resolved, and Rejected.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="report-form" class="mb-5">
+        <div class="card shadow-sm">
+          <div class="card-header bg-white">
+            <h2 class="h5 mb-0">Create Lost Item Report</h2>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="itemName" class="form-label">Item Name</label>
+                  <input type="text" class="form-control" id="itemName" placeholder="Wallet, keys, phone..." />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="category" class="form-label">Category</label>
+                  <select class="form-select" id="category">
+                    <option selected>Select category</option>
+                    <option>Electronics</option>
+                    <option>ID / Wallet</option>
+                    <option>Keys</option>
+                    <option>Clothing</option>
+                    <option>Books</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="dateLost" class="form-label">Date Lost</label>
+                  <input type="date" class="form-control" id="dateLost" />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="locationLost" class="form-label">Location Lost</label>
+                  <input type="text" class="form-control" id="locationLost" placeholder="Building, room, area" />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-label">Contact Phone</label>
+                  <input type="text" class="form-control" id="contactPhone" placeholder="(910) 555-1234" />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label">Contact Email</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="name@example.edu" />
+                </div>
+
+                <div class="col-12">
+                  <label for="description" class="form-label">Description</label>
+                  <textarea class="form-control" id="description" rows="4" placeholder="Describe the item, color, brand, unique marks, and where you last saw it."></textarea>
+                </div>
+
+                <div class="col-12">
+                  <label for="evidence" class="form-label">Optional Attachment</label>
+                  <input type="file" class="form-control" id="evidence" />
+                </div>
+
+                <div class="col-12 d-flex flex-wrap gap-2">
+                  <button type="button" class="btn btn-primary">Submit Report</button>
+                  <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="my-reports" class="mb-5">
+        <div class="card shadow-sm">
+          <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <h2 class="h5 mb-0">My Reports</h2>
+            <span class="badge text-bg-primary">Campus Community User View</span>
+          </div>
+          <div class="card-body">
+            <div class="row g-3 mb-3">
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Search my reports" />
+              </div>
+              <div class="col-md-3">
+                <select class="form-select">
+                  <option selected>All statuses</option>
+                  <option>Open</option>
+                  <option>Under Review</option>
+                  <option>Resolved</option>
+                  <option>Rejected</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select class="form-select">
+                  <option selected>Sort by newest</option>
+                  <option>Sort by oldest</option>
+                  <option>Sort by item name</option>
+                </select>
+              </div>
+              <div class="col-md-2 d-grid">
+                <button type="button" class="btn btn-outline-primary">Filter</button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Report ID</th>
+                    <th>Item</th>
+                    <th>Date Lost</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Last Updated</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>RPT-1001</td>
+                    <td>Black Wallet</td>
+                    <td>2026-02-20</td>
+                    <td>Library, 1st Floor</td>
+                    <td><span class="badge text-bg-warning">Under Review</span></td>
+                    <td>2026-02-21</td>
+                  </tr>
+                  <tr>
+                    <td>RPT-1002</td>
+                    <td>Silver Keys</td>
+                    <td>2026-02-18</td>
+                    <td>Fisher Student Center</td>
+                    <td><span class="badge text-bg-success">Resolved</span></td>
+                    <td>2026-02-19</td>
+                  </tr>
+                  <tr>
+                    <td>RPT-1003</td>
+                    <td>Blue Water Bottle</td>
+                    <td>2026-02-15</td>
+                    <td>Kenan Hall</td>
+                    <td><span class="badge text-bg-secondary">Open</span></td>
+                    <td>2026-02-16</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="alert alert-info mb-0">
+              Users can view only reports that belong to their own account.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="staff-review" class="mb-5">
+        <div class="card shadow-sm">
+          <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <h2 class="h5 mb-0">Staff Review Dashboard</h2>
+            <span class="badge text-bg-dark">Security Office Staff View</span>
+          </div>
+          <div class="card-body">
+            <div class="row g-3 mb-3">
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Search reports" />
+              </div>
+              <div class="col-md-3">
+                <select class="form-select">
+                  <option selected>All statuses</option>
+                  <option>Open</option>
+                  <option>Under Review</option>
+                  <option>Resolved</option>
+                  <option>Rejected</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select class="form-select">
+                  <option selected>All categories</option>
+                  <option>Electronics</option>
+                  <option>ID / Wallet</option>
+                  <option>Keys</option>
+                  <option>Clothing</option>
+                  <option>Books</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-md-3 d-grid">
+                <button type="button" class="btn btn-outline-primary">Apply Filters</button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Report ID</th>
+                    <th>Submitted By</th>
+                    <th>Item</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Decision</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>RPT-1001</td>
+                    <td>student01@uncw.edu</td>
+                    <td>Black Wallet</td>
+                    <td>Library, 1st Floor</td>
+                    <td><span class="badge text-bg-warning">Under Review</span></td>
+                    <td>
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-success">Approve</button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>RPT-1004</td>
+                    <td>student02@uncw.edu</td>
+                    <td>Student ID Card</td>
+                    <td>Warwick Center</td>
+                    <td><span class="badge text-bg-secondary">Open</span></td>
+                    <td>
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-success">Approve</button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>RPT-1005</td>
+                    <td>student03@uncw.edu</td>
+                    <td>Phone Charger</td>
+                    <td>University Union</td>
+                    <td><span class="badge text-bg-secondary">Open</span></td>
+                    <td>
+                      <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-success">Approve</button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-header bg-white">
+                <h2 class="h5 mb-0">Report Details</h2>
+              </div>
+              <div class="card-body">
+                <dl class="row mb-0">
+                  <dt class="col-sm-4">Report ID</dt>
+                  <dd class="col-sm-8">RPT-1001</dd>
+
+                  <dt class="col-sm-4">Item</dt>
+                  <dd class="col-sm-8">Black Wallet</dd>
+
+                  <dt class="col-sm-4">Category</dt>
+                  <dd class="col-sm-8">ID / Wallet</dd>
+
+                  <dt class="col-sm-4">Date Lost</dt>
+                  <dd class="col-sm-8">2026-02-20</dd>
+
+                  <dt class="col-sm-4">Location</dt>
+                  <dd class="col-sm-8">Library, 1st Floor</dd>
+
+                  <dt class="col-sm-4">Description</dt>
+                  <dd class="col-sm-8">Black leather wallet with student ID and two bank cards.</dd>
+
+                  <dt class="col-sm-4">Status</dt>
+                  <dd class="col-sm-8"><span class="badge text-bg-warning">Under Review</span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-header bg-white">
+                <h2 class="h5 mb-0">Status History</h2>
+              </div>
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Submitted
+                    <span class="text-secondary small">2026-02-20 10:30</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Open
+                    <span class="text-secondary small">2026-02-20 10:35</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Under Review
+                    <span class="text-secondary small">2026-02-21 09:15</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="py-4 bg-white border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div class="text-secondary small">
+        Campus Lost &amp; Found Prototype - Sprint 1
+      </div>
+      <div class="small text-secondary">
+        Static Bootstrap demonstration page
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
