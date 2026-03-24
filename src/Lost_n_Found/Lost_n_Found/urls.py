@@ -1,5 +1,5 @@
 """
-Definition of urls for UNCW_Lost_n_Found.
+Definition of urls for Lost_n_Found.
 """
 
 from datetime import datetime

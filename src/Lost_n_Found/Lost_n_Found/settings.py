@@ -1,5 +1,5 @@
 """
-Django settings for UNCW_Lost_n_Found project.
+Django settings for Lost_n_Found project.
 
 Based on 'django-admin startproject' using Django 2.1.2.
 
@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '23c28203-1ab4-4fa7-9dc3-699d93ecf958'
+SECRET_KEY = 'cf9a82b2-a50b-480c-ba29-92fc8bedb0e9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'UNCW_Lost_n_Found.urls'
+ROOT_URLCONF = 'Lost_n_Found.urls'
 
 # Template configuration
 # https://docs.djangoproject.com/en/2.1/topics/templates/
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'UNCW_Lost_n_Found.wsgi.application'
+WSGI_APPLICATION = 'Lost_n_Found.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
