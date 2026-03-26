@@ -6,6 +6,7 @@ RUNTIME_DIR="/opt/lost-n-found"
 CURRENT_USER="${SUDO_USER:-$(whoami)}"
 USER_HOME="$(eval echo "~$CURRENT_USER")"
 REPO_DIR="$USER_HOME/se-lost-and-found/src/Lost_n_Found"
+APP_BUILD=$(git rev-parse --short HEAD)
 
 systemctl stop lost-n-found
 
@@ -36,6 +37,9 @@ python manage.py collectstatic --noinput
 deactivate
 
 chown -R "$CURRENT_USER:$CURRENT_USER" "$RUNTIME_DIR"
+
+sudo sed -i "s/^Environment=\"APP_BUILD=.*\"$/Environment=\"APP_BUILD=${APP_BUILD}\"/" /etc/systemd/system/lost-n-found.ser>
+sudo systemctl daemon-reload
 
 systemctl start lost-n-found
 
