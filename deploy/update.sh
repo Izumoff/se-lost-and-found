@@ -2,7 +2,7 @@
 
 RUNTIME_DIR="/opt/lost-n-found"
 REPO_DIR="$HOME/se-lost-and-found/src/Lost_n_Found"
-CURRENT_USER="${SUDO_USER:-$(whoami)}"
+CURRENT_USER="{$(whoami)}"
 
 find "$RUNTIME_DIR" -mindepth 1 ! -name 'uwsgi.ini' -exec rm -rf {} +
 
