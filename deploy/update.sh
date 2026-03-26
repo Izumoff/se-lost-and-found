@@ -1,18 +1,17 @@
 #!/bin/bash
 
-# TODO: parameters
-# Run time folder
-# Repo folders
+RUNTIME_DIR="/opt/lost-n-found"
+REPO_DIR="$HOME/se-lost-and-found/src/Lost_n_Found"
+CURRENT_USER="${SUDO_USER:-$(whoami)}"
 
-# check and delete content in the runtime folder
-[ -d /opt/lost-n-found ] && find /opt/lost-n-found -mindepth 1 ! -name 'uwsgi.ini' -exec rm -rf {} +
-find /opt/lost-n-found -mindepth 1 ! -name 'uwsgi.ini' -exec rm -rf {} +
+find "$RUNTIME_DIR" -mindepth 1 ! -name 'uwsgi.ini' -exec rm -rf {} +
 
-cp ~/se-lost-and-found/src/Lost_n_Found/manage.py /opt/lost-n-found/
-cp ~/se-lost-and-found/src/Lost_n_Found/requirements.txt /opt/lost-n-found/
+cp "$REPO_DIR/manage.py" "$RUNTIME_DIR/"
+cp "$REPO_DIR/requirements.txt" "$RUNTIME_DIR/"
+cp -r "$REPO_DIR/app" "$RUNTIME_DIR/"
+cp -r "$REPO_DIR/Lost_n_Found" "$RUNTIME_DIR/"
+cp "$REPO_DIR/db.sqlite3" "$RUNTIME_DIR/"
 
-cp -r ~/se-lost-and-found/src/Lost_n_Found/app /opt/lost-n-found/
-cp -r ~/se-lost-and-found/src/Lost_n_Found/Lost_n_Found /opt/lost-n-found/
+chown -R "$CURRENT_USER:$CURRENT_USER" "$RUNTIME_DIR"
 
-cp ~/se-lost-and-found/src/Lost_n_Found/db.sqlite3 /opt/lost-n-found/
 
