@@ -210,3 +210,6 @@ src/UNCW-Lost-n-Found/obj/Any CPU/Debug/UNCW-Lost-n-Found.pyproj.CoreCompileInpu
 src/UNCW-Lost-n-Found/obj/
 src/Lost_n_Found/.vs/
 folders.txt
+src/Lost_n_Found/Lost_n_Found/secrets.py
+src/Lost_n_Found/obj/
+src/Lost_n_Found/staticfiles/

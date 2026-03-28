@@ -40,6 +40,9 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="Lost_n_Found\secrets.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="manage.py" />
     <Compile Include="Lost_n_Found\__init__.py" />
     <Compile Include="Lost_n_Found\settings.py" />

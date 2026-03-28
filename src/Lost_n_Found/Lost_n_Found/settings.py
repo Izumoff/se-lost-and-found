@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import posixpath
+from .secrets import SECRET_KEY, DB_NAME, DB_USER, DB_PASSWORD, DB_HOST
 
 # Application version (semantic version, controlled in code)
 APP_VERSION = "0.0.0"
@@ -31,7 +32,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'cf9a82b2-a50b-480c-ba29-92fc8bedb0e9'
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
@@ -92,7 +93,10 @@ WSGI_APPLICATION = 'Lost_n_Found.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, DB_NAME),
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
+        'HOST': DB_HOST,
     }
 }
 
