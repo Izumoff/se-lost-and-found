@@ -2,31 +2,141 @@
 
 {% block content %}
 
-<div class="jumbotron">
-    <h1>Campus Lost-n-Found</h1>
-    <p class="lead">class project. Django default application, ubuntu server deploy testing</p>
-    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<div class="jumbotron" style="background-color:#ffffff; border:1px solid #dddddd; margin-bottom:30px;">
+    <div class="row">
+        <div class="col-md-7">
+            <h1>Campus Lost and Found</h1>
+            <p class="lead">
+                Submit a lost item report, view reports, and support the campus lost and found process.
+            </p>
+            <p>
+                <a href="#" class="btn btn-primary btn-lg">Create Report</a>
+                <a href="#" class="btn btn-default btn-lg">View My Reports</a>
+            </p>
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">System Summary</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <div class="col-xs-6" style="margin-bottom:15px;">
+                            <div style="border:1px solid #dddddd; padding:15px;">
+                                <div style="font-size:24px; font-weight:bold;">12</div>
+                                <div>Open Reports</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6" style="margin-bottom:15px;">
+                            <div style="border:1px solid #dddddd; padding:15px;">
+                                <div style="font-size:24px; font-weight:bold;">5</div>
+                                <div>Under Review</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div style="border:1px solid #dddddd; padding:15px;">
+                                <div style="font-size:24px; font-weight:bold;">8</div>
+                                <div>Resolved</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div style="border:1px solid #dddddd; padding:15px;">
+                                <div style="font-size:24px; font-weight:bold;">2</div>
+                                <div>Rejected</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <p class="text-muted" style="margin-bottom:0;">
+                        Campus community users can create reports and track their own submissions. Security staff will review and manage reports.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Django gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://djangobook.com/django-tutorials/">Learn more &raquo;</a></p>
+        <div class="panel panel-default" style="height:100%;">
+            <div class="panel-heading">
+                <h2 class="panel-title">Campus Community User</h2>
+            </div>
+            <div class="panel-body">
+                <p>Create a report and track your own lost and found activity.</p>
+                <p><a href="{% url 'login' %}" class="btn btn-primary btn-block">Log In</a></p>
+                <p><a href="#" class="btn btn-default btn-block">Create Report</a></p>
+                <p><a href="#" class="btn btn-default btn-block">View My Reports</a></p>
+                <p><a href="#" class="btn btn-default btn-block">View Report Status</a></p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.org/">Learn more &raquo;</a></p>
+
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Example Reports</h2>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Report ID</th>
+                                <th>Item</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th>Updated</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RPT-1001</td>
+                                <td>Black Wallet</td>
+                                <td>Library, 1st Floor</td>
+                                <td><span class="label label-warning">Under Review</span></td>
+                                <td>2026-02-21</td>
+                            </tr>
+                            <tr>
+                                <td>RPT-1002</td>
+                                <td>Silver Keys</td>
+                                <td>Fisher Student Center</td>
+                                <td><span class="label label-success">Resolved</span></td>
+                                <td>2026-02-19</td>
+                            </tr>
+                            <tr>
+                                <td>RPT-1003</td>
+                                <td>Blue Water Bottle</td>
+                                <td>Kenan Hall</td>
+                                <td><span class="label label-default">Open</span></td>
+                                <td>2026-02-16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="alert alert-info" style="margin-bottom:0;">
+                    Public front page preview only. Full report workflows will be added in later stages.
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+</div>
+
+<div class="panel panel-default" style="margin-top:30px;">
+    <div class="panel-heading">
+        <h2 class="panel-title">Planned User Story Pages</h2>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Create Found Report</a></div>
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Edit Lost Report</a></div>
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Edit Found Report</a></div>
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Published Reports</a></div>
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Search and Filter</a></div>
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Staff Edit Content</a></div>
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Staff Change Status</a></div>
+            <div class="col-sm-6 col-md-3" style="margin-bottom:15px;"><a href="#" class="btn btn-default btn-block">Staff Close Reports</a></div>
+        </div>
     </div>
 </div>
 
