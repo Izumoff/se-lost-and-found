@@ -1,0 +1,22 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+<h2>{{ report.title }}</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Report Details</strong>
+    </div>
+    <div class="panel-body">
+        <p><strong>Type:</strong> {{ report.get_report_type_display }}</p>
+        <p><strong>Location:</strong> {{ report.location_text }}</p>
+        <p><strong>Created:</strong> {{ report.created_at }}</p>
+        <p><strong>Description:</strong></p>
+        <p>{{ report.description }}</p>
+    </div>
+</div>
+
+<p>
+    <a href="{% url 'reports' %}">Back to Reports</a>
+</p>
+{% endblock %}

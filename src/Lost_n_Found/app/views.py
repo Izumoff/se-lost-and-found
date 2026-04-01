@@ -5,12 +5,13 @@ app/views.py
 from datetime import datetime
 
 from django.http import HttpRequest
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
 from django.contrib.auth.models import Group, User
 
 from .forms import CampusUserRegistrationForm, RegistrationVerificationCodeForm
+from .models import Report
 
 
 def home(request):
@@ -50,6 +51,44 @@ def about(request):
             'title': 'About',
             'message': 'Your application description page.',
             'year': datetime.now().year,
+        }
+    )
+
+
+def reports(request):
+    """Renders the published reports list page."""
+    assert isinstance(request, HttpRequest)
+
+    published_reports = Report.objects.filter(is_published=True)
+
+    return render(
+        request,
+        'app/reports.html',
+        {
+            'title': 'Published Reports',
+            'year': datetime.now().year,
+            'reports': published_reports,
+        }
+    )
+
+
+def report_detail(request, report_id):
+    """Renders the published report detail page."""
+    assert isinstance(request, HttpRequest)
+
+    report = get_object_or_404(
+        Report,
+        id=report_id,
+        is_published=True
+    )
+
+    return render(
+        request,
+        'app/report_detail.html',
+        {
+            'title': report.title,
+            'year': datetime.now().year,
+            'report': report,
         }
     )
 
