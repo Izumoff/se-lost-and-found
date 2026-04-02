@@ -16,9 +16,13 @@
     </div>
 </div>
 
-{% if user.is_authenticated and report.user == user and report.report_type == 'found' and not report.is_published %}
+{% if user.is_authenticated and report.user == user and not report.is_published %}
 <p>
+    {% if report.report_type == 'found' %}
     <a href="{% url 'edit_found_report' report.id %}" class="btn btn-primary">Edit Report</a>
+    {% elif report.report_type == 'lost' %}
+    <a href="{% url 'edit_lost_report' report.id %}" class="btn btn-primary">Edit Report</a>
+    {% endif %}
 </p>
 {% endif %}
 
