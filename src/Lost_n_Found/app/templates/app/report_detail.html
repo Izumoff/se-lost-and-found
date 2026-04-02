@@ -16,6 +16,12 @@
     </div>
 </div>
 
+{% if user.is_authenticated and report.user == user and report.report_type == 'found' and not report.is_published %}
+<p>
+    <a href="{% url 'edit_found_report' report.id %}" class="btn btn-primary">Edit Report</a>
+</p>
+{% endif %}
+
 <p>
     <a href="{% url 'reports' %}">Back to Reports</a>
 </p>

@@ -77,14 +77,15 @@ def reports(request):
 
 
 def report_detail(request, report_id):
-    """Renders the published report detail page."""
+    """Renders the report detail page with access control."""
     assert isinstance(request, HttpRequest)
 
-    report = get_object_or_404(
-        Report,
-        id=report_id,
-        is_published=True
-    )
+    report = get_object_or_404(Report, id=report_id)
+
+    # Allow access if published OR owner
+    if not report.is_published:
+        if not request.user.is_authenticated or report.user != request.user:
+            return redirect('reports')
 
     return render(
         request,
@@ -145,7 +146,7 @@ def edit_found_report(request, report_id):
         form = FoundItemReportForm(request.POST, instance=report)
         if form.is_valid():
             form.save()
-            return redirect('reports')
+            return redirect(f"{reverse('edit_found_report', args=[report.id])}?updated=1")
     else:
         form = FoundItemReportForm(instance=report)
 

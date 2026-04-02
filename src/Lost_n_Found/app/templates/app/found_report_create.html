@@ -3,7 +3,13 @@
 {% block content %}
 
 <div class="container mt-4">
-    <h2>Create Found Item Report</h2>
+    <h2>
+        {% if title == 'Edit Found Item Report' %}
+        Edit Found Item Report
+        {% else %}
+        Create Found Item Report
+        {% endif %}
+    </h2>
 
 
 
@@ -11,6 +17,12 @@
     {% if success %}
     <div class="alert alert-success">
         Your report has been submitted successfully and is awaiting approval.
+    </div>
+    {% endif %}
+
+    {% if request.GET.updated == '1' %}
+    <div class="alert alert-success">
+        Your report has been updated successfully.
     </div>
     {% endif %}
 
@@ -42,7 +54,11 @@
         </div>
 
         <button type="submit" class="btn btn-primary">
+            {% if title == 'Edit Found Item Report' %}
+            Save Changes
+            {% else %}
             Submit Report
+            {% endif %}
         </button>
     </form>
 </div>
