@@ -238,10 +238,9 @@ def change_report_status(request, report_id):
 
 
 
-
 @login_required
 def resolve_report(request, report_id):
-    """Allows Security Office Staff to mark a report as resolved."""
+    """Allows Security Office Staff to mark an approved open report as resolved."""
     report = get_object_or_404(Report, id=report_id)
 
     is_security_office_staff = request.user.groups.filter(
@@ -251,11 +250,36 @@ def resolve_report(request, report_id):
     if not is_security_office_staff:
         return redirect('reports')
 
-    if report.status not in ['resolved', 'closed']:
-        report.status = 'resolved'
+    if (
+        report.status == Report.STATUS_APPROVED and
+        report.outcome == Report.OUTCOME_OPEN
+    ):
+        report.outcome = Report.OUTCOME_RESOLVED
         report.save()
 
     return redirect(f'/reports/{report.id}/?resolved=1')
+
+
+@login_required
+def close_report(request, report_id):
+    """Allows Security Office Staff to mark an approved open report as closed."""
+    report = get_object_or_404(Report, id=report_id)
+
+    is_security_office_staff = request.user.groups.filter(
+        name='Security Office Staff'
+    ).exists()
+
+    if not is_security_office_staff:
+        return redirect('reports')
+
+    if (
+        report.status == Report.STATUS_APPROVED and
+        report.outcome == Report.OUTCOME_OPEN
+    ):
+        report.outcome = Report.OUTCOME_CLOSED
+        report.save()
+
+    return redirect(f'/reports/{report.id}/?closed=1')
 
 
 @login_required

@@ -28,6 +28,7 @@
     <div class="panel-body">
         <p><strong>Type:</strong> {{ report.get_report_type_display }}</p>
         <p><strong>Status:</strong> {{ report.get_status_display }}</p>
+        <p><strong>Outcome:</strong> {{ report.get_outcome_display }}</p>
         <p><strong>Location:</strong> {{ report.location_text }}</p>
         <p><strong>Created:</strong> {{ report.created_at }}</p>
         <p><strong>Description:</strong></p>
@@ -49,15 +50,13 @@
                     <option value="pending" {% if report.status == 'pending' %}selected{% endif %}>Pending</option>
                     <option value="approved" {% if report.status == 'approved' %}selected{% endif %}>Approved</option>
                     <option value="rejected" {% if report.status == 'rejected' %}selected{% endif %}>Rejected</option>
-                    <option value="resolved" {% if report.status == 'resolved' %}selected{% endif %}>Resolved</option>
-                    <option value="closed" {% if report.status == 'closed' %}selected{% endif %}>Closed</option>
                 </select>
             </div>
             <br />
             <button type="submit" class="btn btn-warning">Update Status</button>
         </form>
 
-        {% if report.status != 'resolved' and report.status != 'closed' %}
+        {% if report.status == 'approved' and report.outcome == 'open' %}
         <hr />
         <p>
             <a href="{% url 'resolve_report' report.id %}" class="btn btn-success">Mark as Resolved</a>
@@ -68,7 +67,7 @@
 </div>
 {% endif %}
 
-{% if user.is_authenticated and report.user == user and not report.is_published %}
+{% if user.is_authenticated and report.user == user and not report.is_published and report.outcome == 'open' %}
 <p>
     {% if report.report_type == 'found' %}
     <a href="{% url 'edit_found_report' report.id %}" class="btn btn-primary">Edit Report</a>
