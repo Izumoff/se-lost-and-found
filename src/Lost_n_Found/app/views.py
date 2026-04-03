@@ -255,7 +255,7 @@ def resolve_report(request, report_id):
         report.status = 'resolved'
         report.save()
 
-    return redirect('report_detail', report_id=report.id)
+    return redirect(f'/reports/{report.id}/?resolved=1')
 
 
 @login_required
@@ -274,7 +274,7 @@ def close_report(request, report_id):
         report.status = 'closed'
         report.save()
 
-    return redirect('report_detail', report_id=report.id)
+    return redirect(f'/reports/{report.id}/?closed=1')
 
 
 
