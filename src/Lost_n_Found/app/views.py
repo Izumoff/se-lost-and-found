@@ -9,6 +9,8 @@ from django.contrib.auth.models import Group, User
 from django.http import HttpRequest
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
+from django.db.models import Q
+
 
 from .forms import (
     CampusUserRegistrationForm,
@@ -111,9 +113,11 @@ def reports(request):
 
     # Search text filtering
     if query:
-        reports = reports.filter(title__icontains=query) | reports.filter(
-            description__icontains=query
-        ) | reports.filter(location_text__icontains=query)
+        reports = reports.filter(
+            Q(title__icontains=query) |
+            Q(description__icontains=query) |
+            Q(location_text__icontains=query)
+        )
 
     # Date filtering
     if date_from:
