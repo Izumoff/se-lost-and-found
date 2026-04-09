@@ -4,6 +4,7 @@ app/views.py
 
 from datetime import datetime
 
+from django.contrib.admin.models import LogEntry
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import Group, User
 from django.db.models import Q
@@ -169,8 +170,6 @@ def report_detail(request, report_id):
     )
 
 
-
-
 @login_required
 def admin_console(request):
     """Renders the admin console main page."""
@@ -258,6 +257,27 @@ def admin_users(request):
             'users': users,
             'allowed_group_names': allowed_group_names,
             'role_updated': request.GET.get('updated') == '1',
+        }
+    )
+
+
+@login_required
+def admin_activity(request):
+    """Renders the admin console system activity page."""
+    assert isinstance(request, HttpRequest)
+
+    if not request.user.is_superuser:
+        return redirect('reports')
+
+    activity_logs = LogEntry.objects.select_related('user').order_by('-action_time')[:50]
+
+    return render(
+        request,
+        'app/admin_activity.html',
+        {
+            'title': 'Admin Console: System Activity',
+            'year': datetime.now().year,
+            'activity_logs': activity_logs,
         }
     )
 

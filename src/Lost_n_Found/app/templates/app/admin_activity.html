@@ -1,0 +1,62 @@
+{# app/templates/app/admin_activity.html #}
+
+{% extends "app/layout.html" %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>System Activity</strong>
+    </div>
+    <div class="panel-body">
+
+        <p>
+            Recent system activity is shown below.
+        </p>
+
+        {% if activity_logs %}
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Date / Time</th>
+                        <th>User</th>
+                        <th>Action</th>
+                        <th>Object</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for log in activity_logs %}
+                    <tr>
+                        <td>{{ log.action_time }}</td>
+                        <td>{{ log.user.username }}</td>
+                        <td>{{ log.get_action_flag_display }}</td>
+                        <td>{{ log.object_repr }}</td>
+                        <td>
+                            {% if log.change_message %}
+                            {{ log.change_message }}
+                            {% else %}
+                            No additional details
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="alert alert-info">
+            No system activity records are available.
+        </div>
+        {% endif %}
+
+        <p style="margin-top:15px;">
+            <a href="{% url 'admin_console' %}" class="btn btn-default">Back to Admin Console</a>
+        </p>
+
+    </div>
+</div>
+
+{% endblock %}
