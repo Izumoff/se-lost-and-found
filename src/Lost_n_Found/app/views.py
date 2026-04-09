@@ -178,6 +178,39 @@ def report_detail(request, report_id):
 
 
 @login_required
+def admin_reports(request):
+    """Renders the admin console reports page with no filtering restrictions."""
+    assert isinstance(request, HttpRequest)
+
+    is_campus_administrator = request.user.is_superuser
+
+    if not is_campus_administrator:
+        return redirect('reports')
+
+    reports = Report.objects.all().order_by('-created_at')
+
+    return render(
+        request,
+        'app/reports.html',
+        {
+            'title': 'Admin Console: All Reports',
+            'year': datetime.now().year,
+            'reports': reports,
+            'current_scope': 'all',
+            'current_report_type': '',
+            'current_status': '',
+            'current_location': '',
+            'current_query': '',
+            'current_date_from': '',
+            'current_date_to': '',
+            'IS_SECURITY_OFFICE_STAFF': False,
+            'IS_ADMIN_CONSOLE': True,
+        }
+    )
+
+
+
+@login_required
 def create_found_report(request):
     """Renders and processes the found item report creation page."""
     assert isinstance(request, HttpRequest)

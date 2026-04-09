@@ -1,9 +1,13 @@
+{# templates/app/reports.html #}
+
 {% extends "app/layout.html" %}
 
 {% block content %}
 <h2>{{ title }}</h2>
 
-{% if current_scope == "mine" %}
+{% if IS_ADMIN_CONSOLE %}
+<p><strong>Showing:</strong> Admin Console — All Reports</p>
+{% elif current_scope == "mine" %}
 <p><strong>Showing:</strong> My Reports</p>
 {% elif current_scope == "all" %}
 <p><strong>Showing:</strong> All Reports</p>
@@ -11,6 +15,7 @@
 <p><strong>Showing:</strong> Published Reports</p>
 {% endif %}
 
+{% if not IS_ADMIN_CONSOLE %}
 <form method="get" class="form-inline" style="margin-bottom:20px;">
 
     <input type="hidden" name="scope" value="{{ current_scope }}">
@@ -61,6 +66,7 @@
     </a>
 
 </form>
+{% endif %}
 
 {% if reports %}
 <p><strong>Results:</strong> {{ reports|length }} report{{ reports|length|pluralize }}</p>
@@ -93,7 +99,11 @@
 </table>
 {% else %}
 <div class="alert alert-info">
+    {% if IS_ADMIN_CONSOLE %}
+    No reports are available.
+    {% else %}
     No reports match the selected scope and filters.
+    {% endif %}
 </div>
 {% endif %}
 {% endblock %}
