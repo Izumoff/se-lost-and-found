@@ -66,6 +66,7 @@
     <Folder Include="Lost_n_Found\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\app\admin_users.html" />
     <Content Include="app\templates\app\password_reset_complete.html" />
     <Content Include="app\templates\app\password_reset_confirm.html" />
     <Content Include="app\templates\app\password_reset_done.html" />
@@ -77,6 +78,7 @@
     <Content Include="app\templates\app\register_verify.html" />
     <Content Include="app\templates\app\reports.html" />
     <Content Include="app\templates\app\report_detail.html" />
+    <Content Include="app\templates\app\admin_console.html" />
     <Content Include="requirements.txt" />
     <Content Include="unix_requirements.txt" />
     <Content Include="app\static\app\content\bootstrap.css" />

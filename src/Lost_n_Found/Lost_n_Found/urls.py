@@ -3,16 +3,16 @@ urls.py
 """
 
 from datetime import datetime
-from django.urls import path
 from django.contrib import admin
 from django.contrib.auth.views import (
     LoginView,
     LogoutView,
-    PasswordResetView,
-    PasswordResetDoneView,
-    PasswordResetConfirmView,
     PasswordResetCompleteView,
+    PasswordResetConfirmView,
+    PasswordResetDoneView,
+    PasswordResetView,
 )
+from django.urls import path
 from app import forms, views
 
 
@@ -35,10 +35,9 @@ urlpatterns = [
     path('reports/create/found/', views.create_found_report, name='create_found_report'),
     path('reports/create/lost/', views.create_lost_report, name='create_lost_report'),
 
+    path('admin-console/', views.admin_console, name='admin_console'),
     path('admin-console/reports/', views.admin_reports, name='admin_reports'),
-
-
-
+    path('admin-console/users/', views.admin_users, name='admin_users'),
 
     path('register/', views.register, name='register'),
     path('register/verify/', views.register_verify, name='register_verify'),

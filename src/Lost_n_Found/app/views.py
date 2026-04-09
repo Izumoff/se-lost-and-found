@@ -6,11 +6,10 @@ from datetime import datetime
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import Group, User
+from django.db.models import Q
 from django.http import HttpRequest
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
-from django.db.models import Q
-
 
 from .forms import (
     CampusUserRegistrationForm,
@@ -79,7 +78,6 @@ def reports(request):
         name='Security Office Staff'
     ).exists()
 
-    # Scope filtering
     if scope == 'mine' and request.user.is_authenticated:
         reports = reports.filter(user=request.user)
 
@@ -90,7 +88,6 @@ def reports(request):
     else:
         reports = reports.filter(is_published=True)
 
-    # Report type filtering
     allowed_report_types = [
         Report.REPORT_TYPE_FOUND,
         Report.REPORT_TYPE_LOST,
@@ -98,7 +95,6 @@ def reports(request):
     if report_type in allowed_report_types:
         reports = reports.filter(report_type=report_type)
 
-    # Status filtering
     allowed_statuses = [
         Report.STATUS_PENDING,
         Report.STATUS_APPROVED,
@@ -107,11 +103,9 @@ def reports(request):
     if status in allowed_statuses:
         reports = reports.filter(status=status)
 
-    # Location filtering
     if location:
         reports = reports.filter(location_text__icontains=location)
 
-    # Search text filtering
     if query:
         reports = reports.filter(
             Q(title__icontains=query) |
@@ -119,7 +113,6 @@ def reports(request):
             Q(location_text__icontains=query)
         )
 
-    # Date filtering
     if date_from:
         reports = reports.filter(created_at__date__gte=date_from)
 
@@ -157,7 +150,6 @@ def report_detail(request, report_id):
         name='Security Office Staff'
     ).exists()
 
-    # Allow access if published, owner, or security office staff.
     if not report.is_published:
         if not request.user.is_authenticated:
             return redirect('reports')
@@ -173,6 +165,26 @@ def report_detail(request, report_id):
             'year': datetime.now().year,
             'report': report,
             'IS_SECURITY_OFFICE_STAFF': is_security_office_staff,
+        }
+    )
+
+
+
+
+@login_required
+def admin_console(request):
+    """Renders the admin console main page."""
+    assert isinstance(request, HttpRequest)
+
+    if not request.user.is_superuser:
+        return redirect('reports')
+
+    return render(
+        request,
+        'app/admin_console.html',
+        {
+            'title': 'Admin Console',
+            'year': datetime.now().year,
         }
     )
 
@@ -208,6 +220,46 @@ def admin_reports(request):
         }
     )
 
+
+@login_required
+def admin_users(request):
+    """Renders and processes the admin console users management page."""
+    assert isinstance(request, HttpRequest)
+
+    if not request.user.is_superuser:
+        return redirect('reports')
+
+    allowed_group_names = [
+        'Campus Community User',
+        'Security Office Staff',
+    ]
+
+    if request.method == 'POST':
+        user_id = request.POST.get('user_id')
+        group_name = request.POST.get('group_name', '').strip()
+
+        target_user = get_object_or_404(User, id=user_id)
+
+        if group_name in allowed_group_names:
+            target_group = get_object_or_404(Group, name=group_name)
+            target_user.groups.clear()
+            target_user.groups.add(target_group)
+
+            return redirect(f"{reverse('admin_users')}?updated=1")
+
+    users = User.objects.filter(is_superuser=False).order_by('username')
+
+    return render(
+        request,
+        'app/admin_users.html',
+        {
+            'title': 'Admin Console: Manage Users & Roles',
+            'year': datetime.now().year,
+            'users': users,
+            'allowed_group_names': allowed_group_names,
+            'role_updated': request.GET.get('updated') == '1',
+        }
+    )
 
 
 @login_required
@@ -377,7 +429,6 @@ def change_report_status(request, report_id):
     return redirect(f"{reverse('report_detail', args=[report.id])}?status_updated=1")
 
 
-
 @login_required
 def resolve_report(request, report_id):
     """Allows Security Office Staff to mark an approved open report as resolved."""
@@ -440,7 +491,6 @@ def close_own_report(request, report_id):
     report.save()
 
     return redirect(f"{reverse('report_detail', args=[report.id])}?closed=1")
-
 
 
 def register(request):

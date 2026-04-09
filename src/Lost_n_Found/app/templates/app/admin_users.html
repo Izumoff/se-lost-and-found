@@ -1,0 +1,79 @@
+{# app/templates/app/admin_users.html #}
+
+{% extends "app/layout.html" %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+{% if role_updated %}
+<div class="alert alert-success">
+    User role was updated successfully.
+</div>
+{% endif %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Manage Users &amp; Roles</strong>
+    </div>
+    <div class="panel-body">
+        <p>
+            <a href="{% url 'admin_reports' %}" class="btn btn-default">Back to Admin Console</a>
+        </p>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Current Role</th>
+                    <th>Change Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for app_user in users %}
+                <tr>
+                    <td>{{ app_user.username }}</td>
+                    <td>{{ app_user.email }}</td>
+                    <td>
+                        {% with current_group=app_user.groups.first %}
+                            {% if current_group %}
+                                {{ current_group.name }}
+                            {% else %}
+                                No role assigned
+                            {% endif %}
+                        {% endwith %}
+                    </td>
+                    <td>
+                        <form method="post" class="form-inline">
+                            {% csrf_token %}
+                            <input type="hidden" name="user_id" value="{{ app_user.id }}">
+
+                            <div class="form-group">
+                                <select name="group_name" class="form-control">
+                                    {% with current_group=app_user.groups.first %}
+                                        {% for group_name in allowed_group_names %}
+                                            <option value="{{ group_name }}"
+                                                {% if current_group and current_group.name == group_name %}selected{% endif %}>
+                                                {{ group_name }}
+                                            </option>
+                                        {% endfor %}
+                                    {% endwith %}
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="margin-left:10px;">
+                                Update Role
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4">No users found.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

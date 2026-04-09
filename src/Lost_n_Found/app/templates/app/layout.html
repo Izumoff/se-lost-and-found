@@ -36,7 +36,7 @@
                             <li><a href="{% url 'reports' %}?scope=all" style="color:#ffffff;">All Reports</a></li>
                         {% endif %}
                         {% if user.is_superuser %}
-                            <li><a href="{% url 'admin_reports' %}">Admin Console</a></li>
+                            <li><a href="{% url 'admin_console' %}">Admin Console</a></li>
                         {% endif %}
                     {% endif %}
 
