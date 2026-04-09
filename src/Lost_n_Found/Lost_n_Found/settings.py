@@ -131,6 +131,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+# email settings
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'noreply@campuslostandfound.local'
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 LANGUAGE_CODE = 'en-us'
