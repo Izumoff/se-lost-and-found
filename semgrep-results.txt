@@ -1,0 +1,2345 @@
+                     
+                     
+┌───────────────────┐
+│ 294 Code Findings │
+└───────────────────┘
+                                                              
+  [36m[22m[24m  demos\static-pages\create-found-report.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           98┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                        
+  [36m[22m[24m  demos\static-pages\create-report.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+          108┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                            
+  [36m[22m[24m  demos\static-pages\edit-found-report.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           78┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                           
+  [36m[22m[24m  demos\static-pages\edit-lost-report.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           78┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                
+  [36m[22m[24m  demos\static-pages\index.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+          176┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                
+  [36m[22m[24m  demos\static-pages\login.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           80┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                 
+  [36m[22m[24m  demos\static-pages\logout.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           54┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                     
+  [36m[22m[24m  demos\static-pages\my-reports.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+          117┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                            
+  [36m[22m[24m  demos\static-pages\published-reports.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           85┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                        
+  [36m[22m[24m  demos\static-pages\report-status.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           97┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                         
+  [36m[22m[24m  demos\static-pages\search-reports.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+          122┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                              
+  [36m[22m[24m  demos\static-pages\staff-change-status.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           79┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                             
+  [36m[22m[24m  demos\static-pages\staff-close-report.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           87┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                            
+  [36m[22m[24m  demos\static-pages\staff-edit-report.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+           81┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                               
+  [36m[22m[24m  demos\static-pages\staff-report-details.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+          155┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                       
+  [36m[22m[24m  demos\static-pages\staff-review.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+               rel="stylesheet">                                                                   
+            ⋮┆----------------------------------------
+          136┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                   
+  [36m[22m[24m  demos\user_interface_design.html[0m
+    ❯❱ html.security.audit.missing-integrity.missing-integrity
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This tag is missing an 'integrity' subresource integrity attribute. The 'integrity' attribute allows
+          for the browser to verify that externally hosted files (for example from a CDN) are delivered       
+          without unexpected manipulation. Without this attribute, if an attacker can modify the externally   
+          hosted resource, this could lead to XSS and other types of attacks. To prevent this, include the    
+          base64-encoded cryptographic hash of the resource (file) you’re telling the browser to fetch in the 
+          'integrity' attribute for all externally hosted files.                                              
+          Details: https://sg.run/krXA                                                                        
+                                                                                                              
+            7┆ <link
+            8┆   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            9┆   rel="stylesheet"
+           10┆ />
+            ⋮┆----------------------------------------
+          474┆ <script                                                                                    
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script
+               >                                                                                          
+                                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\adodbapi\examples\db_print.py[0m
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+           44┆ c.execute(sql)
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+           44┆ c.execute(sql)
+                                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\adodbapi\examples\xls_read.py[0m
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+           37┆ crsr.execute(sql)
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+           37┆ crsr.execute(sql)
+                                                                         
+  [36m[22m[24m  lostnfound\Lib\site-packages\anyio\_core\_eventloop.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          200┆ module = import_module(f"anyio._backends._{asynclib_name}")
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\anyio\streams\tls.py[0m
+    ❯❱ python.django.security.audit.query-set-extra.avoid-query-set-extra
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          QuerySet.extra' does not provide safeguards against SQL injection and requires very careful use. SQL
+          injection can lead to critical data being stolen by attackers. Instead of using '.extra', use the   
+          Django ORM and parameterized queries such as `People.objects.get(name='Bob')`.                      
+          Details: https://sg.run/kXZP                                                                        
+                                                                                                              
+          249┆ tls_version = self.extra(TLSAttribute.tls_version)
+                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\anyio\to_interpreter.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+          121┆ item = pickle.dumps((func, args), pickle.HIGHEST_PROTOCOL)
+            ⋮┆----------------------------------------
+          130┆ res = pickle.loads(res)
+                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\anyio\to_process.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+           94┆ retval = pickle.loads(pickled_response)
+            ⋮┆----------------------------------------
+          103┆ request = pickle.dumps(("run", func, args), protocol=pickle.HIGHEST_PROTOCOL)
+            ⋮┆----------------------------------------
+          167┆ pickled = pickle.dumps(
+          168┆     ("init", sys.path, main_module_path),
+          169┆     protocol=pickle.HIGHEST_PROTOCOL,
+          170┆ )
+            ⋮┆----------------------------------------
+          218┆ command, *args = pickle.load(stdin.buffer)
+            ⋮┆----------------------------------------
+          248┆ pickled = pickle.dumps(exception, pickle.HIGHEST_PROTOCOL)
+            ⋮┆----------------------------------------
+          251┆ pickled = pickle.dumps(retval, pickle.HIGHEST_PROTOCOL)
+            ⋮┆----------------------------------------
+          255┆ pickled = pickle.dumps(exc, pickle.HIGHEST_PROTOCOL)
+                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\attr\_make.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          227┆ eval(bytecode, globs, locs)
+   
+     ❱ python.lang.security.audit.dangerous-annotations-usage.dangerous-annotations-usage
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Annotations passed to `typing.get_type_hints` are evaluated in `globals` and `locals` namespaces.
+          Make sure that no arbitrary value can be written as the annotation and passed to                 
+          `typing.get_type_hints` function.                                                                
+          Details: https://sg.run/8R6J                                                                     
+                                                                                                           
+          3140┆ self.__call__.__annotations__["return"] = rt
+            ⋮┆----------------------------------------
+          3393┆ pipe_converter.__annotations__["val"] = t
+            ⋮┆----------------------------------------
+          3402┆ pipe_converter.__annotations__["return"] = rt
+                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\attr\converters.py[0m
+     ❱ python.lang.security.audit.dangerous-annotations-usage.dangerous-annotations-usage
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Annotations passed to `typing.get_type_hints` are evaluated in `globals` and `locals` namespaces.
+          Make sure that no arbitrary value can be written as the annotation and passed to                 
+          `typing.get_type_hints` function.                                                                
+          Details: https://sg.run/8R6J                                                                     
+                                                                                                           
+           54┆ optional_converter.__annotations__["val"] = typing.Optional[t]
+            ⋮┆----------------------------------------
+           58┆ optional_converter.__annotations__["return"] = typing.Optional[rt]
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\boltons\funcutils.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          1035┆ exec(code, execdict)
+                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\boltons\namedutils.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+           68┆ exec(code, global_env)
+                                                               
+  [36m[22m[24m  lostnfound\Lib\site-packages\certifi\core.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+           16┆ from importlib.resources import as_file, files
+            ⋮┆----------------------------------------
+           51┆ from importlib.resources import path as get_path, read_text
+                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\cffi\cffi_opcode.py[0m
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+          180┆ G_FLAGS = dict([('_CFFI_' + _key, globals()[_key])
+                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\cffi\recompiler.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           78┆ flags = eval(self.flags, G_FLAGS)
+                                                                      
+  [36m[22m[24m  lostnfound\Lib\site-packages\cffi\setuptools_ext.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+           26┆ exec(code, glob, glob)
+                                                                        
+  [36m[22m[24m  lostnfound\Lib\site-packages\charset_normalizer\cd.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           38┆ decoder = importlib.import_module(f"encodings.{iana_name}").IncrementalDecoder
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\charset_normalizer\utils.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          281┆ importlib.import_module(f"encodings.{name}").IncrementalDecoder,
+            ⋮┆----------------------------------------
+          329┆ decoder_a = importlib.import_module(f"encodings.{iana_name_a}").IncrementalDecoder
+            ⋮┆----------------------------------------
+          330┆ decoder_b = importlib.import_module(f"encodings.{iana_name_b}").IncrementalDecoder
+                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\click\_termui_impl.py[0m
+   ❯❯❱ python.lang.compatibility.python36.python36-compatibility-Popen1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          the `errors` argument to Popen is only available on Python 3.6+
+          Details: https://sg.run/weBP                                   
+                                                                         
+          427┆ c = subprocess.Popen(
+          428┆     [cmd_absolute],
+          429┆     shell=True,
+          430┆     stdin=subprocess.PIPE,
+          431┆     env=env,
+          432┆     errors="replace",
+          433┆     text=True,
+          434┆ )
+   
+   ❯❯❱ python.lang.security.audit.subprocess-shell-true.subprocess-shell-true
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'subprocess' function 'Popen' with 'shell=True'. This is dangerous because this call will   
+          spawn the command using a shell process. Doing so propagates current shell settings and variables,
+          which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.  
+          Details: https://sg.run/J92w                                                                      
+                                                                                                            
+           ▶▶┆ Autofix ▶ False
+          429┆ shell=True,
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ False
+          552┆ c = subprocess.Popen(f'{editor} "{filename}"', env=environ, shell=True)
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\cryptography\hazmat\_oid.py[0m
+    ❯❱ python.cryptography.security.insecure-hash-algorithms-md5.insecure-hash-algorithm-md5
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.               
+          Details: https://sg.run/eY88                                                                   
+                                                                                                         
+           ▶▶┆ Autofix ▶ SHA256
+          128┆ SignatureAlgorithmOID.RSA_WITH_MD5: hashes.MD5(),
+   
+    ❯❱ python.cryptography.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/J9Qy                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ SHA256
+          129┆ SignatureAlgorithmOID.RSA_WITH_SHA1: hashes.SHA1(),
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ SHA256
+          130┆ SignatureAlgorithmOID._RSA_WITH_SHA1: hashes.SHA1(),
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ SHA256
+          139┆ SignatureAlgorithmOID.ECDSA_WITH_SHA1: hashes.SHA1(),
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ SHA256
+          148┆ SignatureAlgorithmOID.DSA_WITH_SHA1: hashes.SHA1(),
+                                                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\cryptography\hazmat\primitives\serialization\ssh.py[0m
+    ❯❱ python.cryptography.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/J9Qy                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ SHA256
+          1009┆ hash_alg = hashes.SHA1()
+                                                                               
+  [36m[22m[24m  lostnfound\Lib\site-packages\cryptography\x509\extensions.py[0m
+    ❯❱ python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/ydYx                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ hashlib.sha256(data)
+           72┆ return hashlib.sha1(data).digest()
+                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\face\sinter.py[0m
+    ❯❱ python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/ydYx                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ hashlib.sha256(code_str.encode('utf8'))
+          136┆ code_hash = hashlib.sha1(code_str.encode('utf8')).hexdigest()[:16]
+   
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          142┆ exec(code, env)
+                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\glom\cli.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          239┆ exec(code, env)
+                                                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\google\protobuf\internal\api_implementation.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           43┆ mod = importlib.import_module(mod_name)
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\google\protobuf\proto_builder.py[0m
+    ❯❱ python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/ydYx                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ hashlib.sha256()
+           68┆ fields_hash = hashlib.sha1()
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\httpcore\__init__.py[0m
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+          141┆ setattr(__locals[__name], "__module__", "httpcore")  # noqa
+                                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\httpcore\_async\connection_pool.py[0m
+    ❯❱ python.flask.security.audit.directly-returned-format-string.directly-returned-format-string
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected Flask route directly returning a formatted string. This is subject to cross-site scripting
+          if user input can reach the string. Consider using the template engine instead and rendering pages 
+          with 'render_template()'.                                                                          
+          Details: https://sg.run/Zv6o                                                                       
+                                                                                                             
+          386┆ return f"<{class_name} [{requests_info} | {connection_info}]>"
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\httpcore\_backends\anyio.py[0m
+    ❯❱ python.django.security.audit.query-set-extra.avoid-query-set-extra
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          QuerySet.extra' does not provide safeguards against SQL injection and requires very careful use. SQL
+          injection can lead to critical data being stolen by attackers. Instead of using '.extra', use the   
+          Django ORM and parameterized queries such as `People.objects.get(name='Bob')`.                      
+          Details: https://sg.run/kXZP                                                                        
+                                                                                                              
+           84┆ return self._stream.extra(anyio.streams.tls.TLSAttribute.ssl_object, None)
+            ⋮┆----------------------------------------
+           86┆ return self._stream.extra(anyio.abc.SocketAttribute.local_address, None)
+            ⋮┆----------------------------------------
+           88┆ return self._stream.extra(anyio.abc.SocketAttribute.remote_address, None)
+            ⋮┆----------------------------------------
+           90┆ return self._stream.extra(anyio.abc.SocketAttribute.raw_socket, None)
+            ⋮┆----------------------------------------
+           92┆ sock = self._stream.extra(anyio.abc.SocketAttribute.raw_socket, None)
+                                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\httpcore\_sync\connection_pool.py[0m
+    ❯❱ python.flask.security.audit.directly-returned-format-string.directly-returned-format-string
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected Flask route directly returning a formatted string. This is subject to cross-site scripting
+          if user input can reach the string. Consider using the template engine instead and rendering pages 
+          with 'render_template()'.                                                                          
+          Details: https://sg.run/Zv6o                                                                       
+                                                                                                             
+          386┆ return f"<{class_name} [{requests_info} | {connection_info}]>"
+                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\httpx\__init__.py[0m
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+          105┆ setattr(__locals[__name], "__module__", "httpx")  # noqa
+                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\httpx\_auth.py[0m
+    ❯❱ python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/ydYx                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ hashlib.sha256(s)
+          309┆ return hashlib.sha1(s).hexdigest()[:16].encode()
+                                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\importlib_metadata\__init__.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          221┆ module = import_module(self.module)
+                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\isapi\install.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          345┆ script_map_func = eval(script_map_func)
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\isapi\samples\redirector.py[0m
+    ❯❱ python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic    
+          value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib  
+          calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.
+          Details: https://sg.run/dKZZ                                                                        
+                                                                                                              
+           80┆ fp = urlopen(new_url)
+                                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\isapi\samples\redirector_asynch.py[0m
+    ❯❱ python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic    
+          value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib  
+          calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.
+          Details: https://sg.run/dKZZ                                                                        
+                                                                                                              
+           49┆ fp = urllib.request.urlopen(new_url)
+                                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\isapi\samples\redirector_with_filter.py[0m
+    ❯❱ python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic    
+          value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib  
+          calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.
+          Details: https://sg.run/dKZZ                                                                        
+                                                                                                              
+           72┆ fp = urllib.request.urlopen(new_url)
+                                                                        
+  [36m[22m[24m  lostnfound\Lib\site-packages\jsonschema\validators.py[0m
+    ❯❱ python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic    
+          value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib  
+          calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.
+          Details: https://sg.run/dKZZ                                                                        
+                                                                                                              
+          113┆ with urlopen(request) as response:  # noqa: S310
+            ⋮┆----------------------------------------
+          1228┆ with urlopen(uri) as url:  # noqa: S310
+                                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\jsonschema_specifications\_core.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+            8┆ from importlib.resources import files
+                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\jwt\jwks_client.py[0m
+    ❯❱ python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic    
+          value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib  
+          calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.
+          Details: https://sg.run/dKZZ                                                                        
+                                                                                                              
+          108┆ with urllib.request.urlopen(
+          109┆     r, timeout=self.timeout, context=self.ssl_context
+          110┆ ) as response:
+                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\mcp\cli\cli.py[0m
+   ❯❯❱ python.lang.security.audit.subprocess-shell-true.subprocess-shell-true
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'subprocess' function 'run' with 'shell=True'. This is dangerous because this call will spawn
+          the command using a shell process. Doing so propagates current shell settings and variables, which 
+          makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.         
+          Details: https://sg.run/J92w                                                                       
+                                                                                                             
+           ▶▶┆ Autofix ▶ False
+           48┆ subprocess.run([cmd, "--version"], check=True, capture_output=True, shell=True)
+   
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          186┆ server_module = importlib.import_module(module_name)
+                                                                                      
+  [36m[22m[24m  lostnfound\Lib\site-packages\opentelemetry\instrumentation\utils.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          102┆ module = import_module(module_path)
+                                                         
+  [36m[22m[24m  lostnfound\Lib\site-packages\peewee.py[0m
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+          3632┆ cursor.execute('PRAGMA %s = %s;' % (pragma, value))
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+          3632┆ cursor.execute('PRAGMA %s = %s;' % (pragma, value))
+   
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+          3638┆ cursor.execute('ATTACH DATABASE "%s" AS "%s"' % (db, name))
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+          3638┆ cursor.execute('ATTACH DATABASE "%s" AS "%s"' % (db, name))
+   
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+          4279┆ curs.execute('SET TRANSACTION ISOLATION LEVEL %s' %
+          4280┆              isolation_level)
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+          4279┆ curs.execute('SET TRANSACTION ISOLATION LEVEL %s' %
+          4280┆              isolation_level)
+                                                                      
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\cache.py[0m
+    ❯❱ python.lang.security.audit.sha224-hash.sha224-hash
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This code uses a 224-bit hash function, which is deprecated or disallowed in some security policies.
+          Consider updating to a stronger hash function such as SHA-384 or higher to ensure compliance and    
+          security.                                                                                           
+          Details: https://sg.run/Db1Yv                                                                       
+                                                                                                              
+           29┆ return hashlib.sha224(s.encode("ascii")).hexdigest()
+                                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\commands\__init__.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          114┆ module = importlib.import_module(module_path)
+                                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\commands\configuration.py[0m
+   ❯❯❱ python.lang.security.audit.subprocess-shell-true.subprocess-shell-true
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'subprocess' function 'check_call' with 'shell=True'. This is dangerous because this call will
+          spawn the command using a shell process. Doing so propagates current shell settings and variables,  
+          which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.    
+          Details: https://sg.run/J92w                                                                        
+                                                                                                              
+           ▶▶┆ Autofix ▶ False
+          239┆ subprocess.check_call(f'{editor} "{fname}"', shell=True)
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\commands\search.py[0m
+   ❯❯❱ python.lang.security.use-defused-xmlrpc.use-defused-xmlrpc
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected use of xmlrpc. xmlrpc is not inherently safe from vulnerabilities. Use defusedxml.xmlrpc
+          instead.                                                                                         
+          Details: https://sg.run/weqY                                                                     
+                                                                                                           
+            5┆ import xmlrpc.client
+                                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\network\auth.py[0m
+    ❯❱ python.lang.security.audit.logging.logger-credential-leak.python-logger-credential-disclosure
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a python logger call with a potential hardcoded secret "Getting credentials from keyring 
+          for %s" being logged. This may lead to secret credentials being exposed. Make sure that the logger
+          is not logging  sensitive information.                                                            
+          Details: https://sg.run/ydNx                                                                      
+                                                                                                            
+           86┆ logger.debug("Getting credentials from keyring for %s", url)
+            ⋮┆----------------------------------------
+    ❯❱ python.lang.security.audit.logging.logger-credential-leak.python-logger-credential-disclosure
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a python logger call with a potential hardcoded secret "Getting password from keyring for
+          %s" being logged. This may lead to secret credentials being exposed. Make sure that the logger is 
+          not logging  sensitive information.                                                               
+          Details: https://sg.run/ydNx                                                                      
+                                                                                                            
+           93┆ logger.debug("Getting password from keyring for %s", url)
+            ⋮┆----------------------------------------
+    ❯❱ python.lang.security.audit.logging.logger-credential-leak.python-logger-credential-disclosure
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a python logger call with a potential hardcoded secret "Found credentials in url for %s"
+          being logged. This may lead to secret credentials being exposed. Make sure that the logger is not
+          logging  sensitive information.                                                                  
+          Details: https://sg.run/ydNx                                                                     
+                                                                                                           
+          351┆ logger.debug("Found credentials in url for %s", netloc)
+            ⋮┆----------------------------------------
+    ❯❱ python.lang.security.audit.logging.logger-credential-leak.python-logger-credential-disclosure
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a python logger call with a potential hardcoded secret "Found credentials in index url for
+          %s" being logged. This may lead to secret credentials being exposed. Make sure that the logger is  
+          not logging  sensitive information.                                                                
+          Details: https://sg.run/ydNx                                                                       
+                                                                                                             
+          367┆ logger.debug("Found credentials in index url for %s", netloc)
+            ⋮┆----------------------------------------
+    ❯❱ python.lang.security.audit.logging.logger-credential-leak.python-logger-credential-disclosure
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a python logger call with a potential hardcoded secret "Found credentials in netrc for %s"
+          being logged. This may lead to secret credentials being exposed. Make sure that the logger is not  
+          logging  sensitive information.                                                                    
+          Details: https://sg.run/ydNx                                                                       
+                                                                                                             
+          374┆ logger.debug("Found credentials in netrc for %s", netloc)
+            ⋮┆----------------------------------------
+    ❯❱ python.lang.security.audit.logging.logger-credential-leak.python-logger-credential-disclosure
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a python logger call with a potential hardcoded secret "Found credentials in keyring for
+          %s" being logged. This may lead to secret credentials being exposed. Make sure that the logger is
+          not logging  sensitive information.                                                              
+          Details: https://sg.run/ydNx                                                                     
+                                                                                                           
+          387┆ logger.debug("Found credentials in keyring for %s", netloc)
+            ⋮┆----------------------------------------
+    ❯❱ python.lang.security.audit.logging.logger-credential-leak.python-logger-credential-disclosure
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a python logger call with a potential hardcoded secret "401 Error, Credentials not correct
+          for %s" being logged. This may lead to secret credentials being exposed. Make sure that the logger 
+          is not logging  sensitive information.                                                             
+          Details: https://sg.run/ydNx                                                                       
+                                                                                                             
+          546┆ logger.warning(
+          547┆     "401 Error, Credentials not correct for %s",
+          548┆     resp.request.url,
+          549┆ )
+                                                                               
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\network\xmlrpc.py[0m
+   ❯❯❱ python.lang.security.use-defused-xmlrpc.use-defused-xmlrpc
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected use of xmlrpc. xmlrpc is not inherently safe from vulnerabilities. Use defusedxml.xmlrpc
+          instead.                                                                                         
+          Details: https://sg.run/weqY                                                                     
+                                                                                                           
+            6┆ import xmlrpc.client
+            ⋮┆----------------------------------------
+           14┆ from xmlrpc.client import _HostType, _Marshallable
+                                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\self_outdated_check.py[0m
+    ❯❱ python.lang.security.audit.sha224-hash.sha224-hash
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This code uses a 224-bit hash function, which is deprecated or disallowed in some security policies.
+          Consider updating to a stronger hash function such as SHA-384 or higher to ensure compliance and    
+          security.                                                                                           
+          Details: https://sg.run/Db1Yv                                                                       
+                                                                                                              
+           42┆ name = hashlib.sha224(key_bytes).hexdigest()
+                                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\utils\compat.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+            4┆ import importlib.resources
+                                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\utils\subprocess.py[0m
+   ❯❯❱ python.lang.compatibility.python36.python36-compatibility-Popen1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          the `errors` argument to Popen is only available on Python 3.6+
+          Details: https://sg.run/weBP                                   
+                                                                         
+          126┆ proc = subprocess.Popen(
+          127┆     # Convert HiddenText objects to the underlying str.
+          128┆     reveal_command_args(cmd),
+          129┆     stdin=subprocess.PIPE,
+          130┆     stdout=subprocess.PIPE,
+          131┆     stderr=subprocess.STDOUT if not stdout_only else subprocess.PIPE,
+          132┆     cwd=cwd,
+          133┆     env=env,
+          134┆     errors="backslashreplace",
+          135┆ )
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_internal\utils\unpacking.py[0m
+   ❯❯❱ trailofbits.python.tarfile-extractall-traversal.tarfile-extractall-traversal
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Possible path traversal through `tarfile.open($PATH).extractall()` if the source tar is controlled
+          by an attacker                                                                                    
+          Details: https://sg.run/2RLD                                                                      
+                                                                                                            
+          179┆ tar = tarfile.open(filename, mode, encoding="utf-8")  # type: ignore
+          180┆ try:
+          181┆     leading = has_leading_dir([member.name for member in tar.getmembers()])
+          182┆
+          183┆     # PEP 706 added `tarfile.data_filter`, and made some other changes to
+          184┆     # Python's tarfile module (see below). The features were backported to
+          185┆     # security releases.
+          186┆     try:
+          187┆         data_filter = tarfile.data_filter
+          188┆     except AttributeError:
+             [hid 60 additional lines, adjust with --max-lines-per-finding] 
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\cachecontrol\_cmd.py[0m
+     ❱ python.lang.security.audit.insecure-transport.requests.request-session-with-http.request-session-with-http
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a request using 'http://'. This request will be unencrypted. Use 'https://' instead.
+          Details: https://sg.run/DoBY                                                                 
+                                                                                                       
+           33┆ sess.mount("http://", adapter)
+                                                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\cachecontrol\caches\file_cache.py[0m
+    ❯❱ python.lang.security.audit.sha224-hash.sha224-hash
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          This code uses a 224-bit hash function, which is deprecated or disallowed in some security policies.
+          Consider updating to a stronger hash function such as SHA-384 or higher to ensure compliance and    
+          security.                                                                                           
+          Details: https://sg.run/Db1Yv                                                                       
+                                                                                                              
+           96┆ return hashlib.sha224(x.encode()).hexdigest()
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\certifi\core.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+           16┆ from importlib.resources import as_file, files
+            ⋮┆----------------------------------------
+           51┆ from importlib.resources import path as get_path, read_text
+                                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\distlib\compat.py[0m
+   ❯❯❱ python.lang.security.use-defused-xmlrpc.use-defused-xmlrpc
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected use of xmlrpc. xmlrpc is not inherently safe from vulnerabilities. Use defusedxml.xmlrpc
+          instead.                                                                                         
+          Details: https://sg.run/weqY                                                                     
+                                                                                                           
+           42┆ import xmlrpclib
+            ⋮┆----------------------------------------
+           81┆ import xmlrpc.client as xmlrpclib
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\distlib\util.py[0m
+    ❯❱ python.lang.security.audit.httpsconnection-detected.httpsconnection-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          The HTTPSConnection API has changed frequently with minor releases of Python. Ensure you are using  
+          the API for your version of Python securely. For example, Python 3 versions prior to 3.4.3 will not 
+          verify SSL certificates by default. See                                                             
+          https://docs.python.org/3/library/http.client.html#http.client.HTTPSConnection for more information.
+          Details: https://sg.run/8yby                                                                        
+                                                                                                              
+          1572┆ self._connection = host, httplib.HTTPSConnection(h, None, **kwargs)
+                                                                                          
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\packaging\licenses\__init__.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          100┆ invalid = eval(python_expression, globals(), locals())
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\pkg_resources\__init__.py[0m
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+          168┆ state[k] = g['_sget_' + v](g[k])
+            ⋮┆----------------------------------------
+          168┆ state[k] = g['_sget_' + v](g[k])
+            ⋮┆----------------------------------------
+          175┆ g['_sset_' + _state_vars[k]](k, g[k], v)
+            ⋮┆----------------------------------------
+          175┆ g['_sset_' + _state_vars[k]](k, g[k], v)
+   
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          1714┆ exec(code, namespace, namespace)
+            ⋮┆----------------------------------------
+          1725┆ exec(script_code, namespace, namespace)
+   
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          2468┆ importlib.import_module(packageName)
+                                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\pygments\formatters\__init__.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          103┆ exec(f.read(), custom_namespace)
+                                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\pygments\lexers\__init__.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          154┆ exec(f.read(), custom_namespace)
+                                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\pygments\unistring.py[0m
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+           83┆ return ''.join(globals()[cat] for cat in args)
+            ⋮┆----------------------------------------
+           90┆ return ''.join(globals()[cat] for cat in newcats)
+                                                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\__init__.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+            7┆ import importlib.resources as resources
+                                                                                                      
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           70┆ obj = import_module(mod_path)
+   
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+          367┆ hook = globals()[hook_name]
+                                                                            
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\requests\auth.py[0m
+    ❯❱ python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/ydYx                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ hashlib.sha256(x)
+          156┆ return hashlib.sha1(x).hexdigest()
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ hashlib.sha256(s)
+          205┆ cnonce = hashlib.sha1(s).hexdigest()[:16]
+                                                                         
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\rich\style.py[0m
+    ❯❱ python.lang.security.audit.marshal.marshal-usage
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          The marshal module is not intended to be secure against erroneous or maliciously constructed data.
+          Never unmarshal data received from an untrusted or unauthenticated source. See more details:      
+          https://docs.python.org/3/library/marshal.html?highlight=security                                 
+          Details: https://sg.run/3xor                                                                      
+                                                                                                            
+          191┆ self._meta = None if meta is None else dumps(meta)
+            ⋮┆----------------------------------------
+          242┆ style._meta = dumps(meta)
+            ⋮┆----------------------------------------
+          475┆ return {} if self._meta is None else cast(Dict[str, Any], loads(self._meta))
+            ⋮┆----------------------------------------
+          751┆ new_style._meta = dumps({**self.meta, **style.meta})
+                                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\truststore\_api.py[0m
+    ❯❱ python.lang.security.audit.insecure-transport.ssl.no-set-ciphers.no-set-ciphers
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          The 'ssl' module disables insecure cipher suites by default. Therefore, use of 'set_ciphers()'   
+          should only be used when you have very specialized requirements. Otherwise, you risk lowering the
+          security of the SSL channel.                                                                     
+          Details: https://sg.run/0Q0v                                                                     
+                                                                                                           
+          161┆ return self._ctx.set_ciphers(__cipherlist)
+                                                                                        
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\urllib3\contrib\pyopenssl.py[0m
+    ❯❱ python.lang.security.audit.weak-ssl-version.weak-ssl-version
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          An insecure SSL version was detected. TLS versions 1.0, 1.1, and all SSL versions are considered
+          weak encryption and are deprecated. Use 'ssl.PROTOCOL_TLSv1_2' or higher.                       
+          Details: https://sg.run/RoZO                                                                    
+                                                                                                          
+           99┆ ssl.PROTOCOL_TLSv1: OpenSSL.SSL.TLSv1_METHOD,
+            ⋮┆----------------------------------------
+          103┆ _openssl_versions[ssl.PROTOCOL_SSLv3] = OpenSSL.SSL.SSLv3_METHOD
+            ⋮┆----------------------------------------
+          106┆ _openssl_versions[ssl.PROTOCOL_TLSv1_1] = OpenSSL.SSL.TLSv1_1_METHOD
+                                                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\urllib3\contrib\securetransport.py[0m
+    ❯❱ python.lang.security.audit.weak-ssl-version.weak-ssl-version
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          An insecure SSL version was detected. TLS versions 1.0, 1.1, and all SSL versions are considered
+          weak encryption and are deprecated. Use 'ssl.PROTOCOL_TLSv1_2' or higher.                       
+          Details: https://sg.run/RoZO                                                                    
+                                                                                                          
+          162┆ _protocol_to_min_max[ssl.PROTOCOL_SSLv2] = (
+            ⋮┆----------------------------------------
+          167┆ _protocol_to_min_max[ssl.PROTOCOL_SSLv3] = (
+            ⋮┆----------------------------------------
+          172┆ _protocol_to_min_max[ssl.PROTOCOL_TLSv1] = (
+            ⋮┆----------------------------------------
+          177┆ _protocol_to_min_max[ssl.PROTOCOL_TLSv1_1] = (
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pip\_vendor\urllib3\util\ssl_.py[0m
+    ❯❱ python.lang.security.audit.ssl-wrap-socket-is-deprecated.ssl-wrap-socket-is-deprecated
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          'ssl.wrap_socket()' is deprecated. This function creates an insecure socket without server name 
+          indication or hostname matching. Instead, create an SSL context using 'ssl.SSLContext()' and use
+          that to wrap a socket.                                                                          
+          Details: https://sg.run/PJOY                                                                    
+                                                                                                          
+          182┆ return wrap_socket(socket, ciphers=self.ciphers, **kwargs)
+   
+    ❯❱ python.lang.security.audit.insecure-transport.ssl.no-set-ciphers.no-set-ciphers
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          The 'ssl' module disables insecure cipher suites by default. Therefore, use of 'set_ciphers()'   
+          should only be used when you have very specialized requirements. Otherwise, you risk lowering the
+          security of the SSL channel.                                                                     
+          Details: https://sg.run/0Q0v                                                                     
+                                                                                                           
+          301┆ context.set_ciphers(ciphers or DEFAULT_CIPHERS)
+                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\playhouse\apsw_ext.py[0m
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+          112┆ self.cursor().execute('begin %s;' % lock_type)
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+          112┆ self.cursor().execute('begin %s;' % lock_type)
+                                                                        
+  [36m[22m[24m  lostnfound\Lib\site-packages\playhouse\cockroachdb.py[0m
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+          153┆ self.cursor().execute('SET TRANSACTION PRIORITY %s' % priority)
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+          153┆ self.cursor().execute('SET TRANSACTION PRIORITY %s' % priority)
+                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\playhouse\fields.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-cPickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `cPickle`, which is known to lead to code execution vulnerabilities. When unpickling,
+          the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the
+          relevant data as JSON or a similar text-based serialization format.                              
+          Details: https://sg.run/eLxb                                                                     
+                                                                                                           
+           55┆ return pickle.loads(value)
+   
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+           55┆ return pickle.loads(value)
+   
+    ❯❱ python.lang.security.deserialization.pickle.avoid-cPickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `cPickle`, which is known to lead to code execution vulnerabilities. When unpickling,
+          the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the
+          relevant data as JSON or a similar text-based serialization format.                              
+          Details: https://sg.run/eLxb                                                                     
+                                                                                                           
+           59┆ pickled = pickle.dumps(value, pickle.HIGHEST_PROTOCOL)
+   
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+           59┆ pickled = pickle.dumps(value, pickle.HIGHEST_PROTOCOL)
+                                                                         
+  [36m[22m[24m  lostnfound\Lib\site-packages\playhouse\postgres_ext.py[0m
+    ❯❱ python.lang.security.insecure-uuid-version.insecure-uuid-version
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Using UUID version 1 for UUID generation can lead to predictable UUIDs based on system information
+          (e.g., MAC address, timestamp). This may lead to security risks such as the sandwich attack.      
+          Consider using `uuid.uuid4()` instead for better randomness and security.                         
+          Details: https://sg.run/BYBgW                                                                     
+                                                                                                            
+           ▶▶┆ Autofix ▶ uuid.uuid4()
+          492┆ curs = self._state.conn.cursor(name=str(uuid.uuid1()),
+                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\playhouse\reflection.py[0m
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+          388┆ cursor = self.execute('SELECT * FROM `%s` LIMIT 1' % table)
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+          388┆ cursor = self.execute('SELECT * FROM `%s` LIMIT 1' % table)
+                                                                          
+  [36m[22m[24m  lostnfound\Lib\site-packages\playhouse\sqlcipher_ext.py[0m
+    ❯❱ python.lang.security.audit.formatted-sql-query.formatted-sql-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected possible formatted SQL query. Use parameterized queries instead.
+          Details: https://sg.run/EkWw                                             
+                                                                                   
+           77┆ conn.execute("PRAGMA key='%s'" % passphrase)
+   
+   ❯❯❱ python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL
+          Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy      
+          provides TextualSQL to easily used prepared statement with named parameters. For complex SQL        
+          composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy   
+          ORM will be a better option.                                                                        
+          Details: https://sg.run/2b1L                                                                        
+                                                                                                              
+           77┆ conn.execute("PRAGMA key='%s'" % passphrase)
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\pydantic\__init__.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          442┆ result = import_module(f'.{attr_name}', package=package)
+            ⋮┆----------------------------------------
+          446┆ module = import_module(module_name, package=package)
+                                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\pydantic\_internal\_validators.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          110┆ module = import_module(module_path)
+                                                                            
+  [36m[22m[24m  lostnfound\Lib\site-packages\pydantic\deprecated\parse.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+           54┆ return pickle.loads(bb)
+                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\pydantic\v1\generics.py[0m
+     ❱ python.lang.security.audit.dangerous-annotations-usage.dangerous-annotations-usage
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Annotations passed to `typing.get_type_hints` are evaluated in `globals` and `locals` namespaces.
+          Make sure that no arbitrary value can be written as the annotation and passed to                 
+          `typing.get_type_hints` function.                                                                
+          Details: https://sg.run/8R6J                                                                     
+                                                                                                           
+          400┆ created_model.__annotations__[key] = concrete_type
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\pydantic\v1\parse.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+           42┆ return pickle.loads(bb)
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\pydantic\v1\utils.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+          134┆ module = import_module(module_path)
+                                                                      
+  [36m[22m[24m  lostnfound\Lib\site-packages\pydantic\v1\version.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           25┆ import_module(p.replace('-', '_'))
+                                                                               
+  [36m[22m[24m  lostnfound\Lib\site-packages\pygments\formatters\__init__.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          103┆ exec(f.read(), custom_namespace)
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\pygments\lexers\__init__.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          154┆ exec(f.read(), custom_namespace)
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pygments\lexers\_lua_builtins.py[0m
+    ❯❱ python.lang.security.audit.insecure-transport.urllib.insecure-urlopen.insecure-urlopen
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected 'urllib.urlopen()' using 'http://'. This request will not be encrypted. Use 'https://'
+          instead.                                                                                       
+          Details: https://sg.run/oxB9                                                                   
+                                                                                                         
+           ▶▶┆ Autofix ▶ urlopen('https://www.lua.org/manual/')
+          225┆ f = urlopen('http://www.lua.org/manual/')
+   
+    ❯❱ python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected a dynamic value being used with urllib. urllib supports 'file://' schemes, so a dynamic    
+          value controlled by a malicious actor may allow them to read arbitrary files. Audit uses of urllib  
+          calls to ensure user data cannot control the URLs, or consider using the 'requests' library instead.
+          Details: https://sg.run/dKZZ                                                                        
+                                                                                                              
+          233┆ f = urlopen(f'http://www.lua.org/manual/{version}/')
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pygments\lexers\_php_builtins.py[0m
+   ❯❯❱ trailofbits.python.tarfile-extractall-traversal.tarfile-extractall-traversal
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Possible path traversal through `tarfile.open($PATH).extractall()` if the source tar is controlled
+          by an attacker                                                                                    
+          Details: https://sg.run/2RLD                                                                      
+                                                                                                            
+          3300┆ with tarfile.open(download[0]) as tar:
+          3301┆     if hasattr(tarfile.TarFile, 'extraction_filter'):
+          3302┆         tar.extractall(filter='data')
+          3303┆     else:
+          3304┆         tar.extractall()
+                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\pygments\unistring.py[0m
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+           83┆ return ''.join(globals()[cat] for cat in args)
+            ⋮┆----------------------------------------
+           90┆ return ''.join(globals()[cat] for cat in newcats)
+                                                                               
+  [36m[22m[24m  lostnfound\Lib\site-packages\pyjwt-2.12.1.dist-info\METADATA[0m
+   ❯❯❱ generic.secrets.security.detected-jwt-token.detected-jwt-token
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          JWT token detected          
+          Details: https://sg.run/05N5
+                                      
+           91┆ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb21lIjoicGF5bG9hZCJ9.4twFt5NiznN84AWoo1d7KO1T_yoc0
+               Z6XOpOVswacPZg                                                                             
+                                                                                          
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\Demos\app\basictimerapp.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           85┆ self.intervaler = eval(self.dlg.buildTimer)
+   
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          128┆ exec(self.dlg.doWork)
+                                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\Demos\cmdserver.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+           80┆ exec(cmd + "\n", __main__.__dict__)
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\Demos\guidemo.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+           29┆ exec(cmd)
+                                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\debugger\debugger.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          478┆ val = repr(eval(text, globs, locs))
+   
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          755┆ exec(cmd, globals, locals)
+            ⋮┆----------------------------------------
+          778┆ exec(what, globs, locs)
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\dialogs\ideoptions.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           24┆ format = eval(
+           25┆     win32ui.GetProfileVal(
+           26┆         interact.sectionProfile,
+           27┆         interact.STYLE_INTERACTIVE_PROMPT,
+           28┆         str(interact.formatInput),
+           29┆     )
+           30┆ )
+            ⋮┆----------------------------------------
+           35┆ format = eval(
+           36┆     win32ui.GetProfileVal(
+           37┆         interact.sectionProfile,
+           38┆         interact.STYLE_INTERACTIVE_OUTPUT,
+           39┆         str(interact.formatOutput),
+           40┆     )
+           41┆ )
+            ⋮┆----------------------------------------
+           46┆ format = eval(
+           47┆     win32ui.GetProfileVal(
+           48┆         interact.sectionProfile,
+           49┆         interact.STYLE_INTERACTIVE_ERROR,
+           50┆         str(interact.formatOutputError),
+           51┆     )
+           52┆ )
+                                                                                            
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\framework\editor\__init__.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           93┆ return eval(fmt)
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\framework\interact.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          311┆ exec(code, self.globals, self.locals)
+            ⋮┆----------------------------------------
+          351┆ exec(
+          352┆     compile(
+          353┆         open(rcfile, "rb").read(), rcfile, "exec", dont_inherit=True
+          354┆     ),
+          355┆     __main__.__dict__,
+          356┆     __main__.__dict__,
+          357┆ )
+            ⋮┆----------------------------------------
+          649┆ exec(o, __main__.__dict__)
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\framework\intpyapp.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          396┆ exec(command + "\n")
+   
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          413┆ browser.Browse(eval(obName, __main__.__dict__, __main__.__dict__))
+                                                                                        
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\framework\scriptutils.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          365┆ exec(codeObject, __main__.__dict__)
+            ⋮┆----------------------------------------
+          475┆ exec(codeObj, __main__.__dict__)
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\framework\sgrepmdi.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           67┆ root = eval("win32con." + keystr[0])
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\framework\toolmenu.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          127┆ exec("%s\n" % pyCmd)
+                                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\framework\winout.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          148┆ det = eval(line[line.find(":") + 1 :].strip())
+                                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\idle\CallTips.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          100┆ return eval(word, namespace)
+                                                                                            
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\scintilla\IDLEenvironment.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          496┆ return eval("%d%s%d" % (i1, op, i2))
+                                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\scintilla\config.py[0m
+    ❯❱ python.lang.security.audit.marshal.marshal-usage
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          The marshal module is not intended to be secure against erroneous or maliciously constructed data.
+          Never unmarshal data received from an untrusted or unauthenticated source. See more details:      
+          https://docs.python.org/3/library/marshal.html?highlight=security                                 
+          Details: https://sg.run/3xor                                                                      
+                                                                                                            
+          104┆ ver = marshal.load(cf)
+            ⋮┆----------------------------------------
+          107┆ kblayoutname = marshal.load(cf)
+            ⋮┆----------------------------------------
+          108┆ magic = marshal.load(cf)
+            ⋮┆----------------------------------------
+          109┆ size = marshal.load(cf)
+            ⋮┆----------------------------------------
+          110┆ mtime = marshal.load(cf)
+            ⋮┆----------------------------------------
+          117┆ self.cache = marshal.load(cf)
+            ⋮┆----------------------------------------
+          163┆ marshal.dump(compiled_config_version, cf)
+            ⋮┆----------------------------------------
+          164┆ marshal.dump(win32api.GetKeyboardLayoutName(), cf)
+            ⋮┆----------------------------------------
+          165┆ marshal.dump(importlib.util.MAGIC_NUMBER, cf)
+            ⋮┆----------------------------------------
+          166┆ marshal.dump(src_stat[stat.ST_SIZE], cf)
+            ⋮┆----------------------------------------
+          167┆ marshal.dump(src_stat[stat.ST_MTIME], cf)
+            ⋮┆----------------------------------------
+          168┆ marshal.dump(self.cache, cf)
+   
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          194┆ exec(codeob, ns)
+                                                                                      
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\scintilla\formatter.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          197┆ self.baseFormatFixed = eval(
+          198┆     self.LoadPreference("Base Format Fixed", str(self.baseFormatFixed))
+          199┆ )
+            ⋮┆----------------------------------------
+          200┆ self.baseFormatProp = eval(
+          201┆     self.LoadPreference("Base Format Proportional", str(self.baseFormatProp))
+          202┆ )
+            ⋮┆----------------------------------------
+          208┆ style.format = eval(new)
+                                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\pythonwin\pywin\scintilla\view.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           84┆ val = eval(name)
+            ⋮┆----------------------------------------
+          662┆ return eval(left, namespace)
+                                                                
+  [36m[22m[24m  lostnfound\Lib\site-packages\requests\auth.py[0m
+    ❯❱ python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is
+          therefore not suitable as a cryptographic signature. Use SHA256 or SHA3 instead.                 
+          Details: https://sg.run/ydYx                                                                     
+                                                                                                           
+           ▶▶┆ Autofix ▶ hashlib.sha256(x)
+          156┆ return hashlib.sha1(x).hexdigest()
+            ⋮┆----------------------------------------
+           ▶▶┆ Autofix ▶ hashlib.sha256(s)
+          205┆ cnonce = hashlib.sha1(s).hexdigest()[:16]
+                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\requests\compat.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           36┆ chardet = importlib.import_module(lib)
+                                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\rich\_unicode_data\__init__.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           90┆ module = import_module(module_name, "rich._unicode_data")
+                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\rich\style.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+          200┆ self._meta = None if meta is None else dumps(meta)
+            ⋮┆----------------------------------------
+          251┆ style._meta = dumps(meta)
+            ⋮┆----------------------------------------
+          475┆ return {} if self._meta is None else cast(Dict[str, Any], loads(self._meta))
+            ⋮┆----------------------------------------
+          751┆ new_style._meta = dumps({**self.meta, **style.meta})
+                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\ruamel\yaml\main.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           87┆ self.plug_ins.append(import_module(file_name))
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\semgrep\commands\install.py[0m
+    ❯❱ python.lang.security.audit.insecure-file-permissions.insecure-file-permissions
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          These permissions `os.stat(semgrep_pro_path_tmp).st_mode         | stat.S_IEXEC         |          
+          stat.S_IXGRP         | stat.S_IXOTH` are widely permissive and grant access to more people than may
+          be necessary. A good default is `0o644` which gives read and write access to yourself and read     
+          access to everyone else.                                                                           
+          Details: https://sg.run/AXY4                                                                       
+                                                                                                             
+          201┆ os.chmod(
+          202┆     semgrep_pro_path_tmp,
+          203┆     os.stat(semgrep_pro_path_tmp).st_mode
+          204┆     | stat.S_IEXEC
+          205┆     | stat.S_IXGRP
+          206┆     | stat.S_IXOTH,
+          207┆ )
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\semgrep\console_scripts\entrypoint.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+           30┆ import importlib.resources
+                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\semgrep\semgrep_core.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+           13┆ import importlib.resources
+                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\starlette\templating.py[0m
+    ❯❱ python.flask.security.xss.audit.direct-use-of-jinja2.direct-use-of-jinja2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected direct use of jinja2. If not done properly, this may bypass HTML escaping which opens up
+          the application to cross-site scripting (XSS) vulnerabilities. Prefer using the Flask method     
+          'render_template()' and templates with a '.html' extension in order to prevent XSS.              
+          Details: https://sg.run/RoKe                                                                     
+                                                                                                           
+           95┆ self.env = jinja2.Environment(loader=loader, autoescape=jinja2.select_autoescape())
+                                                                       
+  [36m[22m[24m  lostnfound\Lib\site-packages\starlette\testclient.py[0m
+   ❯❯❱ javascript.lang.security.detect-insecure-websocket.detect-insecure-websocket
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Insecure WebSocket Detected. WebSocket Secure (wss) should be used for all WebSocket connections.
+          Details: https://sg.run/GWyz                                                                     
+                                                                                                           
+          652┆ url = urljoin("ws://testserver", url)
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\typing_extensions.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          4034┆ value if not isinstance(value, str) else eval(value, globals, locals)
+            ⋮┆----------------------------------------
+          4116┆ value = eval(code, globals, locals)
+                                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\typing_inspection\typing_objects.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          101┆ exec(func_code, globals_, locals_)
+            ⋮┆----------------------------------------
+          133┆ exec(func_code, globals_, locals_)
+                                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\urllib3\contrib\emscripten\fetch.py[0m
+   ❯❯❱ python.lang.compatibility.python37.python37-compatibility-importlib2
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found 'importlib.resources', which is a module only available on Python 3.7+. This does not work in 
+          lower versions, and therefore is not backwards compatible. Use importlib_resources instead for older
+          Python versions.                                                                                    
+          Details: https://sg.run/eL3y                                                                        
+                                                                                                              
+           42┆ from importlib.resources import files
+                                                                            
+  [36m[22m[24m  lostnfound\Lib\site-packages\urllib3\contrib\pyopenssl.py[0m
+    ❯❱ python.lang.security.audit.weak-ssl-version.weak-ssl-version
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          An insecure SSL version was detected. TLS versions 1.0, 1.1, and all SSL versions are considered
+          weak encryption and are deprecated. Use 'ssl.PROTOCOL_TLSv1_2' or higher.                       
+          Details: https://sg.run/RoZO                                                                    
+                                                                                                          
+           73┆ ssl.PROTOCOL_TLSv1: OpenSSL.SSL.TLSv1_METHOD,
+            ⋮┆----------------------------------------
+           77┆ _openssl_versions[ssl.PROTOCOL_TLSv1_1] = OpenSSL.SSL.TLSv1_1_METHOD
+                                                                    
+  [36m[22m[24m  lostnfound\Lib\site-packages\urllib3\util\ssl_.py[0m
+    ❯❱ python.lang.security.audit.insecure-transport.ssl.no-set-ciphers.no-set-ciphers
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          The 'ssl' module disables insecure cipher suites by default. Therefore, use of 'set_ciphers()'   
+          should only be used when you have very specialized requirements. Otherwise, you risk lowering the
+          security of the SSL channel.                                                                     
+          Details: https://sg.run/0Q0v                                                                     
+                                                                                                           
+          311┆ context.set_ciphers(ciphers)
+                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\uvicorn\config.py[0m
+    ❯❱ python.lang.security.audit.insecure-transport.ssl.no-set-ciphers.no-set-ciphers
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          The 'ssl' module disables insecure cipher suites by default. Therefore, use of 'set_ciphers()'   
+          should only be used when you have very specialized requirements. Otherwise, you risk lowering the
+          security of the SSL channel.                                                                     
+          Details: https://sg.run/0Q0v                                                                     
+                                                                                                           
+          121┆ ctx.set_ciphers(ciphers)
+   
+    ❯❱ python.lang.security.audit.insecure-file-permissions.insecure-file-permissions
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          These permissions `uds_perms` are widely permissive and grant access to more people than may be   
+          necessary. A good default is `0o644` which gives read and write access to yourself and read access
+          to everyone else.                                                                                 
+          Details: https://sg.run/AXY4                                                                      
+                                                                                                            
+          517┆ os.chmod(self.uds, uds_perms)
+                                                                   
+  [36m[22m[24m  lostnfound\Lib\site-packages\uvicorn\importer.py[0m
+    ❯❱ python.lang.security.audit.non-literal-import.non-literal-import
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Untrusted user input in `importlib.import_module()` function allows an attacker to load arbitrary
+          code. Avoid dynamic values in `importlib.import_module()` or use a whitelist to prevent running  
+          untrusted code.                                                                                  
+          Details: https://sg.run/y6Jk                                                                     
+                                                                                                           
+           19┆ module = importlib.import_module(module_str)
+                                                                                 
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32\Demos\win32clipboardDemo.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+          138┆ SetClipboardData(fmt, pickle.dumps(pickled_object))
+            ⋮┆----------------------------------------
+          141┆ loaded_object = pickle.loads(data)
+            ⋮┆----------------------------------------
+          142┆ assert pickle.loads(data) == pickled_object, "Didn't get the correct data!"
+                                                                             
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32\lib\win32serviceutil.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+          621┆ modName = pickle.whichmodule(cls, cls.__name__)
+                                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32\scripts\VersionStamp\vssutil.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           43┆ strVal = eval(strVal, evalEnv[0], evalEnv[1])
+                                                                     
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32\scripts\h2py.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          152┆ exec(stmt, env)
+            ⋮┆----------------------------------------
+          164┆ exec(stmt, env)
+                                                                          
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32com\client\dynamic.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          418┆ exec(
+          419┆     codeObject, globNameSpace, tempNameSpace
+          420┆ )  # self.__dict__, self.__dict__
+                                                                           
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32com\client\gencache.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+           86┆ p = pickle.Pickler(f)
+            ⋮┆----------------------------------------
+          129┆ p = pickle.Unpickler(f)
+                                                                         
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32com\server\policy.py[0m
+    ❯❱ python.lang.security.dangerous-globals-use.dangerous-globals-use
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Found non static data as an index to 'globals()'. This is extremely dangerous because it allows an
+          attacker to execute arbitrary code on the system. Refactor your code not to use 'globals()'.      
+          Details: https://sg.run/jNzn                                                                      
+                                                                                                            
+          782┆ return globals()[spec]
+                                                                          
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32com\servers\interp.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           40┆ return eval(str(exp), self.dict)
+   
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+           48┆ exec(str(exp), self.dict)
+                                                                                  
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32comext\axdebug\expressions.py[0m
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+           54┆ self.result = eval(
+           55┆     self.code, self.frame.f_globals, self.frame.f_locals
+           56┆ )
+   
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+           58┆ exec(self.code, self.frame.f_globals, self.frame.f_locals)
+   
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          198┆ self.dictionary[self.name] = eval(
+          199┆     value, self.stackFrame.f_globals, self.stackFrame.f_locals
+          200┆ )
+                                                                                        
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32comext\axscript\client\framework.py[0m
+    ❯❱ python.lang.security.audit.exec-detected.exec-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of exec(). exec() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ndRX                                                                     
+                                                                                                           
+          1146┆ exec(codeObject, globals, locals)
+            ⋮┆----------------------------------------
+          1148┆ exec(codeObject, globals, locals)
+   
+    ❯❱ python.lang.security.audit.eval-detected.eval-detected
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this 
+          content can be input from outside the program, this may be a code injection vulnerability. Ensure
+          evaluated content is not definable by external sources.                                          
+          Details: https://sg.run/ZvrD                                                                     
+                                                                                                           
+          1174┆ return eval(codeBlock, globals, locals)
+            ⋮┆----------------------------------------
+          1176┆ return eval(codeBlock, globals, locals)
+                                                                                              
+  [36m[22m[24m  lostnfound\Lib\site-packages\win32comext\shell\demos\servers\folder_view.py[0m
+    ❯❱ python.lang.security.deserialization.pickle.avoid-pickle
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the
+          serialized data could be manipulated to run arbitrary code. Instead, consider serializing the       
+          relevant data as JSON or a similar text-based serialization format.                                 
+          Details: https://sg.run/OPwB                                                                        
+                                                                                                              
+          129┆ return pickle.loads(pidl[-1])
+            ⋮┆----------------------------------------
+          159┆ pidls.append([pickle.dumps(data)])
+                                                                           
+  [36m[22m[24m  src\Lost_n_Found\app\static\app\scripts\jquery-1.10.2.js[0m
+    ❯❱ javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Possibility of prototype polluting function detected. By adding or modifying attributes of an object
+          prototype, it is possible to create attributes that exist on every object, or replace critical      
+          attributes with malicious ones. This can be problematic if the software depends on existence or non-
+          existence of certain attributes, or uses pre-defined attributes of object prototype (such as        
+          hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, 
+          using an object without prototypes (via Object.create(null) ), blocking modifications of attributes 
+          that resolve to object prototype, using Map instead of object.                                      
+          Details: https://sg.run/w1DB                                                                        
+                                                                                                              
+          2096┆ while ( (node = node[ dir ]) ) {
+            ⋮┆----------------------------------------
+          2497┆ while ( (elem = elem[ dir ]) ) {
+            ⋮┆----------------------------------------
+          2511┆ while ( (elem = elem[ dir ]) ) {
+            ⋮┆----------------------------------------
+          2519┆ while ( (elem = elem[ dir ]) ) {
+            ⋮┆----------------------------------------
+          5951┆ cur = cur[dir];
+                                                                                   
+  [36m[22m[24m  src\Lost_n_Found\app\static\app\scripts\jquery.validate-vsdoc.js[0m
+    ❯❱ javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          RegExp() called with a `i` function argument, this might allow an attacker to cause a Regular       
+          Expression Denial-of-Service (ReDoS) within your application as RegExP blocks the main thread. For  
+          this reason, it is recommended to use hardcoded regexes instead. If your regex is run on user-      
+          controlled input, consider performing input validation or use a regex checking/sanitization library 
+          such as https://www.npmjs.com/package/recheck to verify that the regex does not appear vulnerable to
+          ReDoS.                                                                                              
+          Details: https://sg.run/gr65                                                                        
+                                                                                                              
+          263┆ source = source.replace(new RegExp("\\{" + i + "\\}", "g"), n);
+   
+     ❱ javascript.lang.security.audit.unsafe-formatstring.unsafe-formatstring
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected string concatenation with a non-literal variable in a util.format / console.log function.
+          If an attacker injects a format specifier in the string, it will forge the log message. Try to use
+          constant values for the format string.                                                            
+          Details: https://sg.run/7Y5R                                                                      
+                                                                                                            
+          625┆ this.settings.debug && window.console && console.log("exception occured when checking
+               element " + element.id                                                               
+          626┆     + ", check the '" + rule.method + "' method", e);
+   
+    ❯❱ javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          RegExp() called with a `param` function argument, this might allow an attacker to cause a Regular   
+          Expression Denial-of-Service (ReDoS) within your application as RegExP blocks the main thread. For  
+          this reason, it is recommended to use hardcoded regexes instead. If your regex is run on user-      
+          controlled input, consider performing input validation or use a regex checking/sanitization library 
+          such as https://www.npmjs.com/package/recheck to verify that the regex does not appear vulnerable to
+          ReDoS.                                                                                              
+          Details: https://sg.run/gr65                                                                        
+                                                                                                              
+          1204┆ return this.optional(element) || value.match(new RegExp(".(" + param + ")$", "i"));
+                                                                             
+  [36m[22m[24m  src\Lost_n_Found\app\static\app\scripts\jquery.validate.js[0m
+    ❯❱ javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          RegExp() called with a `i` function argument, this might allow an attacker to cause a Regular       
+          Expression Denial-of-Service (ReDoS) within your application as RegExP blocks the main thread. For  
+          this reason, it is recommended to use hardcoded regexes instead. If your regex is run on user-      
+          controlled input, consider performing input validation or use a regex checking/sanitization library 
+          such as https://www.npmjs.com/package/recheck to verify that the regex does not appear vulnerable to
+          ReDoS.                                                                                              
+          Details: https://sg.run/gr65                                                                        
+                                                                                                              
+          219┆ source = source.replace( new RegExp("\\{" + i + "\\}", "g"), function() {
+   
+     ❱ javascript.lang.security.audit.unsafe-formatstring.unsafe-formatstring
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Detected string concatenation with a non-literal variable in a util.format / console.log function.
+          If an attacker injects a format specifier in the string, it will forge the log message. Try to use
+          constant values for the format string.                                                            
+          Details: https://sg.run/7Y5R                                                                      
+                                                                                                            
+          584┆ console.log( "Exception occurred when checking element " + element.id + ", check the '" +
+               rule.method + "' method.", e );                                                          
+                                                                                         
+  [36m[22m[24m  src\Lost_n_Found\app\static\app\scripts\jquery.validate.unobtrusive.js[0m
+    ❯❱ javascript.lang.security.audit.detect-non-literal-regexp.detect-non-literal-regexp
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          RegExp() called with a `params` function argument, this might allow an attacker to cause a Regular  
+          Expression Denial-of-Service (ReDoS) within your application as RegExP blocks the main thread. For  
+          this reason, it is recommended to use hardcoded regexes instead. If your regex is run on user-      
+          controlled input, consider performing input validation or use a regex checking/sanitization library 
+          such as https://www.npmjs.com/package/recheck to verify that the regex does not appear vulnerable to
+          ReDoS.                                                                                              
+          Details: https://sg.run/gr65                                                                        
+                                                                                                              
+          279┆ match = new RegExp(params).exec(value);
+                                                                              
+  [36m[22m[24m  src\Lost_n_Found\app\templates\app\password_reset_form.html[0m
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+            8┆ <form method="post">
+            9┆     {% csrf_token %}
+           10┆
+           11┆     {% if form.errors %}
+           12┆     <div class="alert alert-danger">
+           13┆         Please correct the error below.
+           14┆     </div>
+           15┆     {% endif %}
+           16┆
+           17┆     <div class="form-group">
+             [hid 9 additional lines, adjust with --max-lines-per-finding] 
+                                                                        
+  [36m[22m[24m  src\Lost_n_Found\app\templates\app\report_detail.html[0m
+    ❯❱ python.django.security.django-no-csrf-token.django-no-csrf-token
+          [31m[1m[24m❰❰ Blocking ❱❱[0m
+          Manually-created forms in django templates should specify a csrf_token to prevent CSRF attacks.
+          Details: https://sg.run/N0Bp                                                                   
+                                                                                                         
+           47┆ <form method="post" action="{% url 'change_report_status' report.id %}">
+           48┆     {% csrf_token %}
+           49┆     <div class="form-group">
+           50┆         <label for="status">Status:</label>
+           51┆         <select name="status" class="form-control">
+           52┆             <option value="pending" {% if report.status == 'pending' %}selected{% endif
+               %}>Pending</option>                                                                    
+           53┆             <option value="approved" {% if report.status == 'approved' %}selected{% endif
+               %}>Approved</option>                                                                     
+           54┆             <option value="rejected" {% if report.status == 'rejected' %}selected{% endif
+               %}>Rejected</option>                                                                     
+           55┆         </select>
+           56┆     </div>
+             [hid 3 additional lines, adjust with --max-lines-per-finding] 
+
